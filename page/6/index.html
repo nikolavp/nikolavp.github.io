@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/index.xml">
+
+    
+    <title>Nikolavp&#39;s hacking</title>
+    <meta property='og:title' content="Nikolavp&#39;s hacking">
+    <meta property="og:type" content="website">
+    
+
+    <meta property="og:url" content="http://nikolavp.github.io/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nikolavp.github.io">Nikolavp&#39;s hacking</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="index">
+
+  <div class="row">
+    <div class="col-md-8">
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Aug 14, 2008</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c/">Eclipse for c&#43;&#43;</a></div>
+  </header>
+  <div class="body"><p>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Aug 13, 2008</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/">Supress some warning in vim</a></div>
+  </header>
+  <div class="body">Maybe you know that vim parses the output from the compiler so it can jump to the right line which cause the error(:h quickfix for more info). Well it seems that the default compiler options parse even warning which are sometimes pretty annoying. There were some warning for depracated conversion from the compiler because of xmp files. Well i am sure that i don&rsquo;t want to see those. So here is what i have in my ~/.vim/ftplugin/cpp.vim for some time: let &amp;errorformat = &quot;%-G%f\:%l\:\ warning\:\ deprecated\ conversion\ from\ string%.%#\,&quot;.&amp;errorformat I know that maybe this only works for gcc, but it is a start.</div>
+
+  
+  <footer>
+    <a href="http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Aug 12, 2008</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/">kbgoffice again working(sort of)</a></div>
+  </header>
+  <div class="body">The code for kbgoffice is working already on my machine. It is not really ported to Qt4, because right now it relays on the qt3support which will not be there and for good ;). There are also some annoying bugs(I will see where they came from, so keep calm :P). The instructions to compile the code(notice there is no target to install it for now) are in the INSTALL file. To get the code you will need subversion.</div>
+
+  
+  <footer>
+    <a href="http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Aug 11, 2008</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/">kbgoffice fun</a></div>
+  </header>
+  <div class="body">Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&hellip; I started to look at the classes this night and I see some bad code :(.</div>
+
+  
+  <footer>
+    <a href="http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Aug 9, 2008</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./">The Aurora project.</a></div>
+  </header>
+  <div class="body"><p>Maybe you&rsquo;ve heard about the Aurora project from mozilla labs, well I wasn&rsquo;t and I was impressed from the videos over <a href="http://www.jroller.com/desmax/entry/mozilla_aurora">here</a>. It seems that maybe the Web will outperform the Desktop some day. I hope that it doesn&rsquo;t happen so soon, because I really like the Desktop more and most of the applications I use today are Desktop based(mostly Qt/KDE).</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://nikolavp.github.io/page/5">Previous</a></li>
+    
+
+    
+    <li><a href="http://nikolavp.github.io/page/7">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="list-group-item">Pattern matching or sort of in python</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/" class="list-group-item">Implement properties in C plus plus</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="list-group-item">Using SSH without password</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="list-group-item">Another Skype instance may exist</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="list-group-item">Moved from blogger to wordpress</a>
+      
+      <a href="http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/" class="list-group-item">Moved from Ubuntu to Arch</a>
+      
+      <a href="http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/" class="list-group-item">Installing jdk7 in Ubuntu</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/" class="list-group-item">Installing flash 64bit on Kubuntu jaunty</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/" class="list-group-item">Did you know movie and Kevin Kelly&#39;s web 3.0</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/" class="list-group-item">Reloading jars at Runtime</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/properties" class="list-group-item">properties</a>
+      
+      <a href="http://nikolavp.github.iotags/tricky" class="list-group-item">tricky</a>
+      
+      <a href="http://nikolavp.github.iotags/bash" class="list-group-item">bash</a>
+      
+      <a href="http://nikolavp.github.iotags/skype" class="list-group-item">skype</a>
+      
+      <a href="http://nikolavp.github.iotags/wordpress" class="list-group-item">wordpress</a>
+      
+      <a href="http://nikolavp.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

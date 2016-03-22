@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/index.xml">
+
+    
+    <title>Moved from blogger to wordpress - Nikolavp&#39;s hacking</title>
+    <meta property='og:title' content="Moved from blogger to wordpress - Nikolavp&#39;s hacking">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nikolavp.github.io">Nikolavp&#39;s hacking</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://nikolavp.github.io"/>
+        <meta itemprop="dateModified" content="2012-02-19T09:32:57&#43;00:00">
+        <meta itemprop="headline" content="Moved from blogger to wordpress">
+        <meta itemprop="description" content="The why You are currently reading this post on my new blog, built on top of Wordpress and OpenShift. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons: small screen/content width - this was the main reason that made me move. The width of the box content is so small that it&rsquo;s really hard to post a snippet of code.">
+        <meta itemprop="url" content="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://nikolavp.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://nikolavp.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Nikolavp&#39;s hacking">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2012-02-19T09:32:57&#43;00:00">Sun, Feb 19, 2012</time>
+          <h1 class="article-title">Moved from blogger to wordpress</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<h1 id="the-why:70edf2da10fd3f3284909ed33498cf7c">The why</h1>
+
+<p>You are currently reading this post on my new blog, built on top of <a href="http://wordpress.com/">Wordpress</a> and <a href="https://openshift.redhat.com/app/">OpenShift</a>. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons:</p>
+
+<ul>
+<li><p><strong>small screen/content width</strong> - this was the main reason that made me move. The width of the box content is so small that it&rsquo;s really hard to post a snippet of code. When I struggled half an hour with the templates just to make them wider and I couldn&rsquo;t, I just gave up&hellip; Which leads us to the next point</p></li>
+
+<li><p><strong>more control</strong> - I was feeling the blogging platform pretty limited for some things. I can remember spending 3 hours once just to make the damn code snippets work and highlight as I wanted them to be</p></li>
+
+<li><p><strong>not mine</strong> - the platform is pretty nice, but was always feeling the site is not really mine.</p></li>
+</ul>
+
+<p>I am not really a fan of PHP, actually it&rsquo;s the only language that I don&rsquo;t like <strong>at all</strong>, but wordpress seems like the best option out there for blogging. Everything seems to be simple and at the end of the day nothings stops me to get my hands dirty and edit some code, which btw is <strong>really</strong> readable. It&rsquo;s just not like other PHP code I have dealt with.</p>
+
+<h1 id="step-by-step-guide:70edf2da10fd3f3284909ed33498cf7c">Step by step guide</h1>
+
+<p>So here is a step by step guide to the migration process.</p>
+
+<h2 id="create-a-blogging-openshift-application:70edf2da10fd3f3284909ed33498cf7c">Create a blogging openshift application</h2>
+
+<p>This assumes that you have the openshift rhc client and stuff installed. So here we go&hellip;</p>
+
+<ol>
+<li><p>create the application, named blog in my case(this assumes you have a domain already)</p>
+
+<p>rhc-create-app -a blog -t php-5.3</p></li>
+
+<li><p>create a mysql instance</p>
+
+<p>rhc-ctl-app -a blog -e add-mysql-5.1</p></li>
+</ol>
+
+<p>this will output some information about your current database name, user, password, url</p>
+
+<h2 id="install-wordpress:70edf2da10fd3f3284909ed33498cf7c">Install wordpress</h2>
+
+<p>First we download the wordpress distribution</p>
+
+<pre><code>cd blog
+wget -c http://wordpress.org/latest.tar.gz
+tar zxvf latest.tar.gz
+mv wordpress/* php
+</code></pre>
+
+<p>Push the code to openshift</p>
+
+<pre><code>git add php
+git commit -m 'Initial wordpress commit'
+git push origin
+</code></pre>
+
+<p>wordpress should be now deployed on the server. Now</p>
+
+<ol>
+<li><p>go to <em><a href="http://appname-domain-name.rhcloud.com/wp-admin/setup-config.php">http://appname-domain-name.rhcloud.com/wp-admin/setup-config.php</a></em> to setup the database information then</p></li>
+
+<li><p>go to <em><a href="http://appname-domain-name.rhcloud.com/wp-admin/install.php">http://appname-domain-name.rhcloud.com/wp-admin/install.php</a></em> to setup the tables, etc.</p></li>
+</ol>
+
+<p>Note that <strong>appname</strong> should be application name that we created in step 1 in openshift and the <strong>domain-name</strong> is your domain on openshift. That&rsquo;s it, you now should have your wordpress ready to go. With this you are able to install plugins, create custom pages, etc, etc.</p>
+
+<h2 id="setup-redirection:70edf2da10fd3f3284909ed33498cf7c">Setup redirection</h2>
+
+<p>There is only one last step until we are finally done. We want to notify our users somehow that the blog has moved.</p>
+
+<ol>
+<li><p>Go in blogger to <strong>Settings -&gt; Publishing</strong> and specify the new domain for your blog there.</p></li>
+
+<li><p>Go in wordpress to <strong>Settings -&gt; Permalinks</strong>, set the custom structure radio button and type</p>
+
+<p>/%year%/%monthnum%/%postname%.html</p></li>
+</ol>
+
+<p>there. This will make sure that links to post from the old blog go to the new blog content.</p>
+
+<ol>
+<li>Write a new post telling your users that you moved. This is only for feed purposes.</li>
+</ol>
+
+<p>I will be glad if someone finds this guide helpful.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://nikolavp.github.iotags/blog" class="tag">blog</a> <a href="http://nikolavp.github.iotags/configuration" class="tag">configuration</a> <a href="http://nikolavp.github.iotags/wordpress" class="tag">wordpress</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f02%2f19%2fmoved-from-blogger-to-wordpress%2f&t=Moved%20from%20blogger%20to%20wordpress" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f02%2f19%2fmoved-from-blogger-to-wordpress%2f&text=Moved%20from%20blogger%20to%20wordpress&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f02%2f19%2fmoved-from-blogger-to-wordpress%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f02%2f19%2fmoved-from-blogger-to-wordpress%2f&title=Moved%20from%20blogger%20to%20wordpress" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="list-group-item">Pattern matching or sort of in python</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/" class="list-group-item">Implement properties in C plus plus</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="list-group-item">Using SSH without password</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="list-group-item">Another Skype instance may exist</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="list-group-item">Moved from blogger to wordpress</a>
+      
+      <a href="http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/" class="list-group-item">Moved from Ubuntu to Arch</a>
+      
+      <a href="http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/" class="list-group-item">Installing jdk7 in Ubuntu</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/" class="list-group-item">Installing flash 64bit on Kubuntu jaunty</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/" class="list-group-item">Did you know movie and Kevin Kelly&#39;s web 3.0</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/" class="list-group-item">Reloading jars at Runtime</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
+      
+      <a href="http://nikolavp.github.iotags/blog" class="list-group-item">blog</a>
+      
+      <a href="http://nikolavp.github.iotags/configuration" class="list-group-item">configuration</a>
+      
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/properties" class="list-group-item">properties</a>
+      
+      <a href="http://nikolavp.github.iotags/tricky" class="list-group-item">tricky</a>
+      
+      <a href="http://nikolavp.github.iotags/bash" class="list-group-item">bash</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

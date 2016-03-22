@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/index.xml">
+
+    
+    <title>kbgoffice fun - Nikolavp&#39;s hacking</title>
+    <meta property='og:title' content="kbgoffice fun - Nikolavp&#39;s hacking">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nikolavp.github.io">Nikolavp&#39;s hacking</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://nikolavp.github.io"/>
+        <meta itemprop="dateModified" content="2008-08-11T22:34:00&#43;00:00">
+        <meta itemprop="headline" content="kbgoffice fun">
+        <meta itemprop="description" content="Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&hellip; I started to look at the classes this night and I see some bad code :(.">
+        <meta itemprop="url" content="http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://nikolavp.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://nikolavp.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Nikolavp&#39;s hacking">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-08-11T22:34:00&#43;00:00">Mon, Aug 11, 2008</time>
+          <h1 class="article-title">kbgoffice fun</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&hellip; I started to look at the classes this night and I see some bad code :(. Not sure why but many people still write ugly C++ code. The idea of the whole program is rather nice and the design is cool but there are some things that drive me nuts. For example the author reads the config file everytime he needs to save/read a property which is not efficient at all. I will try to fix some of the problems and I hope I will have the time for that. I will post a snippet which bit me today while I was working on the damn thing.</p>
+
+<p> 1 #include <iostream>  2 #include <cstdlib>  3 #include <ifstream>  4 #include <string>  5 #include <map>  6   7   8 int main (int argc, char const* argv[])  9 { 10     std::map<std::string, std::string> myMap; 11     std::ifstream iofile(&ldquo;example.txt&rdquo;); 12     std::string key; 13     std::string value; 14     while(! iofile.eof()){ 15         getline(iofile,key); 16         int position = key.find(&ldquo;=&rdquo;); 17         if (position == std::string::npos)  18             break; 19         value = key; 20         value.erase(0,(position+1)); 21         key.erase(key.begin()+position, key.end()); 22         std::cout &lt;&lt; &ldquo;The key is &ldquo; &lt;&lt; key &lt;&lt; &ldquo; and the value is &ldquo; &lt;&lt; value &lt;&lt; std::endl; 23     } 24     return 0; 25 } 26 //    std::string home = getenv(&ldquo;HOME&rdquo;); 27 //    std::ofstream file(&ldquo;example.txt&rdquo;, std::ios::app | std::ios::out); 28 //    file &lt;&lt; &ldquo;WithSplash=0\n&rdquo;; 29 //    file.close();</p>
+
+<p>Well where is the problem with that you ask :? The answer is <a href="http://www.parashift.com/c++-faq-lite/input-output.html#faq-15.5">here </a> so we change the code to this:</p>
+
+<p> 1 #include <iostream>  2 #include <cstdlib>  3 #include <fstream>  4 #include <string>  5 #include <map>  6   7   8 int main (int argc, char const* argv[])  9 { 10     std::map<std::string, std::string> myMap; 11     std::ifstream iofile(&ldquo;example.txt&rdquo;); 12     std::string key; 13     std::string value; 14     while( getline(iofile,key) ){ 15         int position = key.find(&ldquo;=&rdquo;); 16         if (position == std::string::npos)  17             break; 18         value = key; 19         value.erase(0,(position+1)); 20         key.erase(key.begin()+position, key.end()); 21         std::cout &lt;&lt; &ldquo;The key is &ldquo; &lt;&lt; key &lt;&lt; &ldquo; and the value is &ldquo; &lt;&lt; value &lt;&lt; std::endl; 22     } 23     return 0; 24 } 25 //    std::string home = getenv(&ldquo;HOME&rdquo;); 26 //    std::ofstream file(&ldquo;example.txt&rdquo;, std::ios::app | std::ios::out); 27 //    file &lt;&lt; &ldquo;WithSplash=0\n&rdquo;; 28 //    file.close();</p>
+
+<p>and we are ready to continue.</p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fnikolavp.github.io%2fblog%2f2008%2f08%2f11%2fkbgoffice-fun%2f&t=kbgoffice%20fun" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2008%2f08%2f11%2fkbgoffice-fun%2f&text=kbgoffice%20fun&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2008%2f08%2f11%2fkbgoffice-fun%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2008%2f08%2f11%2fkbgoffice-fun%2f&title=kbgoffice%20fun" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="list-group-item">Pattern matching or sort of in python</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/" class="list-group-item">Implement properties in C plus plus</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="list-group-item">Using SSH without password</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="list-group-item">Another Skype instance may exist</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="list-group-item">Moved from blogger to wordpress</a>
+      
+      <a href="http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/" class="list-group-item">Moved from Ubuntu to Arch</a>
+      
+      <a href="http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/" class="list-group-item">Installing jdk7 in Ubuntu</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/" class="list-group-item">Installing flash 64bit on Kubuntu jaunty</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/" class="list-group-item">Did you know movie and Kevin Kelly&#39;s web 3.0</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/" class="list-group-item">Reloading jars at Runtime</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
+      
+      <a href="http://nikolavp.github.iotags/blog" class="list-group-item">blog</a>
+      
+      <a href="http://nikolavp.github.iotags/configuration" class="list-group-item">configuration</a>
+      
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/properties" class="list-group-item">properties</a>
+      
+      <a href="http://nikolavp.github.iotags/tricky" class="list-group-item">tricky</a>
+      
+      <a href="http://nikolavp.github.iotags/bash" class="list-group-item">bash</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

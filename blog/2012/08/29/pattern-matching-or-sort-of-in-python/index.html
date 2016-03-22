@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/index.xml">
+
+    
+    <title>Pattern matching or sort of in python - Nikolavp&#39;s hacking</title>
+    <meta property='og:title' content="Pattern matching or sort of in python - Nikolavp&#39;s hacking">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nikolavp.github.io">Nikolavp&#39;s hacking</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://nikolavp.github.io"/>
+        <meta itemprop="dateModified" content="2012-08-29T15:18:05&#43;00:00">
+        <meta itemprop="headline" content="Pattern matching or sort of in python">
+        <meta itemprop="description" content="I must admit that pattern matching is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&rsquo;t until late that I found about new languages on the JVM that support the same idiom. For this to work properly - the language should know how to &ldquo;destruct&rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable.">
+        <meta itemprop="url" content="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://nikolavp.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://nikolavp.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Nikolavp&#39;s hacking">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2012-08-29T15:18:05&#43;00:00">Wed, Aug 29, 2012</time>
+          <h1 class="article-title">Pattern matching or sort of in python</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>I must admit that <a href="http://en.wikipedia.org/wiki/Pattern_matching">pattern matching</a> is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&rsquo;t until late that I found about new languages on the JVM that support the same idiom.</p>
+
+<p>For this to work properly - the language should know how to &ldquo;destruct&rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable. In that case you would write something like this:</p>
+
+<pre><code>f (x:xs) =  -- do something with &quot;x&quot; as the head of the list and &quot;xs&quot; as the tail 
+</code></pre>
+
+<p>This is a definition of <strong>f</strong> as a function on one argument - if you then call the function with a list like <strong>[1, 2, 3]</strong> you will have a <strong>x = 1</strong> and <strong>xs = [2, 3]</strong> in the body of the function.</p>
+
+<p>So given this knowledge today I started coding a python script at work. And I found myself trying this pattern in the python interactive shell - the result was that python supports this for lists at least:</p>
+
+<pre><code>&gt;&gt;&gt; p = [1, 2]
+&gt;&gt;&gt; [a, b] = p
+&gt;&gt;&gt; a 
+1
+&gt;&gt;&gt; b
+2
+&gt;&gt;&gt; 
+</code></pre>
+
+<p>But continuing further I was given an error message:</p>
+
+<pre><code>&gt;&gt;&gt; p = [1, 2, 3]
+&gt;&gt;&gt; [a, b] = p
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ValueError: too many values to unpack
+&gt;&gt;&gt; 
+</code></pre>
+
+<p>So while this works for full pattern on lists it won&rsquo;t work if you provide less elements.</p>
+
+<p>It is strange how exotic languages like haskell can open your mind for idioms that you can use in more &ldquo;accepted&rdquo; languages like python.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://nikolavp.github.iotags/haskell" class="tag">haskell</a> <a href="http://nikolavp.github.iotags/pattern%20matching" class="tag">pattern matching</a> <a href="http://nikolavp.github.iotags/python" class="tag">python</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f08%2f29%2fpattern-matching-or-sort-of-in-python%2f&t=Pattern%20matching%20or%20sort%20of%20in%20python" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f08%2f29%2fpattern-matching-or-sort-of-in-python%2f&text=Pattern%20matching%20or%20sort%20of%20in%20python&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f08%2f29%2fpattern-matching-or-sort-of-in-python%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2012%2f08%2f29%2fpattern-matching-or-sort-of-in-python%2f&title=Pattern%20matching%20or%20sort%20of%20in%20python" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="list-group-item">Pattern matching or sort of in python</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/" class="list-group-item">Implement properties in C plus plus</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="list-group-item">Using SSH without password</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="list-group-item">Another Skype instance may exist</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="list-group-item">Moved from blogger to wordpress</a>
+      
+      <a href="http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/" class="list-group-item">Moved from Ubuntu to Arch</a>
+      
+      <a href="http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/" class="list-group-item">Installing jdk7 in Ubuntu</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/" class="list-group-item">Installing flash 64bit on Kubuntu jaunty</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/" class="list-group-item">Did you know movie and Kevin Kelly&#39;s web 3.0</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/" class="list-group-item">Reloading jars at Runtime</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.iotags/haskell" class="list-group-item">haskell</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
+      
+      <a href="http://nikolavp.github.iotags/blog" class="list-group-item">blog</a>
+      
+      <a href="http://nikolavp.github.iotags/configuration" class="list-group-item">configuration</a>
+      
+      <a href="http://nikolavp.github.iotags/skype" class="list-group-item">skype</a>
+      
+      <a href="http://nikolavp.github.iotags/wordpress" class="list-group-item">wordpress</a>
+      
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/properties" class="list-group-item">properties</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

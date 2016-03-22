@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/styles.css">
+    <link rel="stylesheet" href="http://nikolavp.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/index.xml">
+
+    
+    <title>How to install kbgoffice qt4 - Nikolavp&#39;s hacking</title>
+    <meta property='og:title' content="How to install kbgoffice qt4 - Nikolavp&#39;s hacking">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nikolavp.github.io">Nikolavp&#39;s hacking</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://nikolavp.github.io"/>
+        <meta itemprop="dateModified" content="2009-05-18T10:17:00&#43;00:00">
+        <meta itemprop="headline" content="How to install kbgoffice qt4">
+        <meta itemprop="description" content="I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs: build-essential qt4-dev-tools cmake subversion(to get the source) You can get all that with a simple command _sudo aptitude install build-essential qt4-dev-tools cmake subversion _.">
+        <meta itemprop="url" content="http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://nikolavp.github.ioimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://nikolavp.github.ioimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Nikolavp&#39;s hacking">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2009-05-18T10:17:00&#43;00:00">Mon, May 18, 2009</time>
+          <h1 class="article-title">How to install kbgoffice qt4</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:</p>
+
+<ol>
+<li><p>build-essential</p></li>
+
+<li><p>qt4-dev-tools</p></li>
+
+<li><p>cmake</p></li>
+
+<li><p>subversion(to get the source)</p></li>
+</ol>
+
+<p>You can get all that with a simple command <strong>_sudo aptitude install build-essential qt4-dev-tools cmake subversion _</strong>. After satisfying all the dependencies you need to get the source code with
+<strong><em>svn co <a href="http://svn.assembla.com/svn/kbgoffice/trunk">http://svn.assembla.com/svn/kbgoffice/trunk</a> kbgoffice</em></strong>
+go to the kbgoffice directory, create a new build directory, compile
+<em><strong>cd kbgoffice;mkdir build;cd build;cmake ../;make</strong></em>
+and if you wаnt to install the program
+<em><strong>sudo make install</strong></em>
+Then to startup the program just type kbgoffice in the konsole or the terminal client you are using <Alt+F2> works fine too. Have fun :D.</p>
+
+<p>I didn&rsquo;t find how to make an uninstall rule so there is no make uninstall option for now. To delete the files installed, just delete the /usr/local/share/bgoffice directory and the /usr/local/bin/kbgoffice executable file :).</p>
+
+<p><img src="http://img.zemanta.com/pixy.gif?x-id=55b39261-a999-82b1-8b34-c3842a30fc88" alt="" /></p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fnikolavp.github.io%2fblog%2f2009%2f05%2f18%2fhow-to-install-kbgoffice-qt4%2f&t=How%20to%20install%20kbgoffice%20qt4" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2009%2f05%2f18%2fhow-to-install-kbgoffice-qt4%2f&text=How%20to%20install%20kbgoffice%20qt4&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2009%2f05%2f18%2fhow-to-install-kbgoffice-qt4%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fnikolavp.github.io%2fblog%2f2009%2f05%2f18%2fhow-to-install-kbgoffice-qt4%2f&title=How%20to%20install%20kbgoffice%20qt4" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="list-group-item">Pattern matching or sort of in python</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/" class="list-group-item">Implement properties in C plus plus</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="list-group-item">Using SSH without password</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="list-group-item">Another Skype instance may exist</a>
+      
+      <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="list-group-item">Moved from blogger to wordpress</a>
+      
+      <a href="http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/" class="list-group-item">Moved from Ubuntu to Arch</a>
+      
+      <a href="http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/" class="list-group-item">Installing jdk7 in Ubuntu</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/" class="list-group-item">Installing flash 64bit on Kubuntu jaunty</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/" class="list-group-item">Did you know movie and Kevin Kelly&#39;s web 3.0</a>
+      
+      <a href="http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/" class="list-group-item">Reloading jars at Runtime</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/properties" class="list-group-item">properties</a>
+      
+      <a href="http://nikolavp.github.iotags/tricky" class="list-group-item">tricky</a>
+      
+      <a href="http://nikolavp.github.iotags/bash" class="list-group-item">bash</a>
+      
+      <a href="http://nikolavp.github.iotags/skype" class="list-group-item">skype</a>
+      
+      <a href="http://nikolavp.github.iotags/wordpress" class="list-group-item">wordpress</a>
+      
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
+      
+      <a href="http://nikolavp.github.iotags/blog" class="list-group-item">blog</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

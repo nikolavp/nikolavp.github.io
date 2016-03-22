@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/</link>
+    <description>Recent content on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate>
+    <atom:link href="http://nikolavp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pattern matching or sort of in python</title>
+      <link>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
+      <pubDate>Wed, 29 Aug 2012 15:18:05 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
+      <description>&lt;p&gt;I must admit that &lt;a href=&#34;http://en.wikipedia.org/wiki/Pattern_matching&#34;&gt;pattern matching&lt;/a&gt; is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&amp;rsquo;t until late that I found about new languages on the JVM that support the same idiom.&lt;/p&gt;
+
+&lt;p&gt;For this to work properly - the language should know how to &amp;ldquo;destruct&amp;rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable. In that case you would write something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;f (x:xs) =  -- do something with &amp;quot;x&amp;quot; as the head of the list and &amp;quot;xs&amp;quot; as the tail 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a definition of &lt;strong&gt;f&lt;/strong&gt; as a function on one argument - if you then call the function with a list like &lt;strong&gt;[1, 2, 3]&lt;/strong&gt; you will have a &lt;strong&gt;x = 1&lt;/strong&gt; and &lt;strong&gt;xs = [2, 3]&lt;/strong&gt; in the body of the function.&lt;/p&gt;
+
+&lt;p&gt;So given this knowledge today I started coding a python script at work. And I found myself trying this pattern in the python interactive shell - the result was that python supports this for lists at least:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; p = [1, 2]
+&amp;gt;&amp;gt;&amp;gt; [a, b] = p
+&amp;gt;&amp;gt;&amp;gt; a 
+1
+&amp;gt;&amp;gt;&amp;gt; b
+2
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But continuing further I was given an error message:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; p = [1, 2, 3]
+&amp;gt;&amp;gt;&amp;gt; [a, b] = p
+Traceback (most recent call last):
+  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;
+ValueError: too many values to unpack
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So while this works for full pattern on lists it won&amp;rsquo;t work if you provide less elements.&lt;/p&gt;
+
+&lt;p&gt;It is strange how exotic languages like haskell can open your mind for idioms that you can use in more &amp;ldquo;accepted&amp;rdquo; languages like python.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implement properties in C plus plus</title>
+      <link>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</link>
+      <pubDate>Sat, 28 Jul 2012 20:23:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using SSH without password</title>
+      <link>http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</link>
+      <pubDate>Sat, 28 Jul 2012 20:16:25 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-problem:b5b8f7c735d5199a55cec0fbd9235a49&#34;&gt;The problem&lt;/h1&gt;
+
+&lt;p&gt;Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh 73.32.32.22 -l nikolavp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and then when prompt for password, enter it. &lt;strong&gt;scp&lt;/strong&gt;, &lt;strong&gt;rsync&lt;/strong&gt; and friends will require almost the same amount of work.
+This is bad for the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;It requires you to know the IP address or the DNS name whatsoever instead of doing an alias for yourself&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You will have to remember the username for that host&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You will have to remember the password for that host&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You will have to break your fingers to type that over and over again&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Well if you are like me you most probably don&amp;rsquo;t want to type all that much just do your work. Here I will provide a setup that will save your world :)&lt;/p&gt;
+
+&lt;h2 id=&#34;create-an-alias-for-the-host:b5b8f7c735d5199a55cec0fbd9235a49&#34;&gt;Create an alias for the host&lt;/h2&gt;
+
+&lt;p&gt;SSH provides a convenient shortcuts for making internal aliases for the hosts. You can define a host alias for an IP address(or DNS resolvable name) and the username for that host. So to not use the password for our imaginary host from the example above, we have include the following in our &lt;strong&gt;~/.ssh/config&lt;/strong&gt; file(create it if it doesn&amp;rsquo;t exist)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Host=foo
+Hostname=72.32.32.22
+User=nikolavp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;create-a-ssh-key:b5b8f7c735d5199a55cec0fbd9235a49&#34;&gt;Create a ssh key&lt;/h2&gt;
+
+&lt;p&gt;You should forget about your password as authenticating method, it is far safer to use a key for that and some sort of cryptography like RSA. You can follow some guide from the internet on how to do that exactly. For example &lt;a href=&#34;http://www.linuxproblem.org/art_9.html&#34;&gt;this one&lt;/a&gt; seems pretty simple and straightforward. Except that there is a far better command now for the last two steps - its called &lt;strong&gt;ssh-copy-id&lt;/strong&gt;. You can man it if you want to know what it does.&lt;/p&gt;
+
+&lt;h2 id=&#34;setting-up-a-keymanager:b5b8f7c735d5199a55cec0fbd9235a49&#34;&gt;Setting up a keymanager&lt;/h2&gt;
+
+&lt;p&gt;To be able to unlock your key once on every session start you should be using a key manager. Likely most of the big desktop environments have done this for you - gnome has gnome-keyring and kde has the kde-wallet. On other more primitive environments you will be on your own. You can look at the guide from Archlinux for more information &lt;a href=&#34;https://wiki.archlinux.org/index.php/SSH_Keys#ssh-agent&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;final-thoughts:b5b8f7c735d5199a55cec0fbd9235a49&#34;&gt;Final thoughts&lt;/h1&gt;
+
+&lt;p&gt;After following the steps from this simple and short guide you should be able to log into your servers without any password with just it&amp;rsquo;s alias. For our host from the example, I will just have to write&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh foo
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Another Skype instance may exist</title>
+      <link>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</link>
+      <pubDate>Wed, 14 Mar 2012 08:27:12 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</guid>
+      <description>&lt;p&gt;Today I got this error message from skype in Linux while I was trying to login. After many attempts to get rid of the message by restarting skype, I finally googled the message and found out that there are two .lck files that need to be deleted. But after trying it and restarting it again, this didn&amp;rsquo;t solve it. If you happen to be one of those unlucky &amp;ldquo;souls&amp;rdquo;. Do the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd ~/.Skype/
+find -name &#39;*.lck&#39; -exec rm {} +
+mv ${old_profile} ${old_profile}.back
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This deletes all .lck files and makes a backup of your login history data, assuming ${old_profile} is the name of your skype login name.&lt;/p&gt;
+
+&lt;p&gt;Now open skype, login in with your account, quit skype and then to restore the history do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rsync -av ${old_profile}.old/ ${old_profile}/
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moved from blogger to wordpress</title>
+      <link>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</link>
+      <pubDate>Sun, 19 Feb 2012 09:32:57 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-why:70edf2da10fd3f3284909ed33498cf7c&#34;&gt;The why&lt;/h1&gt;
+
+&lt;p&gt;You are currently reading this post on my new blog, built on top of &lt;a href=&#34;http://wordpress.com/&#34;&gt;Wordpress&lt;/a&gt; and &lt;a href=&#34;https://openshift.redhat.com/app/&#34;&gt;OpenShift&lt;/a&gt;. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;small screen/content width&lt;/strong&gt; - this was the main reason that made me move. The width of the box content is so small that it&amp;rsquo;s really hard to post a snippet of code. When I struggled half an hour with the templates just to make them wider and I couldn&amp;rsquo;t, I just gave up&amp;hellip; Which leads us to the next point&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;more control&lt;/strong&gt; - I was feeling the blogging platform pretty limited for some things. I can remember spending 3 hours once just to make the damn code snippets work and highlight as I wanted them to be&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;not mine&lt;/strong&gt; - the platform is pretty nice, but was always feeling the site is not really mine.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am not really a fan of PHP, actually it&amp;rsquo;s the only language that I don&amp;rsquo;t like &lt;strong&gt;at all&lt;/strong&gt;, but wordpress seems like the best option out there for blogging. Everything seems to be simple and at the end of the day nothings stops me to get my hands dirty and edit some code, which btw is &lt;strong&gt;really&lt;/strong&gt; readable. It&amp;rsquo;s just not like other PHP code I have dealt with.&lt;/p&gt;
+
+&lt;h1 id=&#34;step-by-step-guide:70edf2da10fd3f3284909ed33498cf7c&#34;&gt;Step by step guide&lt;/h1&gt;
+
+&lt;p&gt;So here is a step by step guide to the migration process.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-a-blogging-openshift-application:70edf2da10fd3f3284909ed33498cf7c&#34;&gt;Create a blogging openshift application&lt;/h2&gt;
+
+&lt;p&gt;This assumes that you have the openshift rhc client and stuff installed. So here we go&amp;hellip;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;create the application, named blog in my case(this assumes you have a domain already)&lt;/p&gt;
+
+&lt;p&gt;rhc-create-app -a blog -t php-5.3&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;create a mysql instance&lt;/p&gt;
+
+&lt;p&gt;rhc-ctl-app -a blog -e add-mysql-5.1&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;this will output some information about your current database name, user, password, url&lt;/p&gt;
+
+&lt;h2 id=&#34;install-wordpress:70edf2da10fd3f3284909ed33498cf7c&#34;&gt;Install wordpress&lt;/h2&gt;
+
+&lt;p&gt;First we download the wordpress distribution&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd blog
+wget -c http://wordpress.org/latest.tar.gz
+tar zxvf latest.tar.gz
+mv wordpress/* php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Push the code to openshift&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add php
+git commit -m &#39;Initial wordpress commit&#39;
+git push origin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;wordpress should be now deployed on the server. Now&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;go to &lt;em&gt;&lt;a href=&#34;http://appname-domain-name.rhcloud.com/wp-admin/setup-config.php&#34;&gt;http://appname-domain-name.rhcloud.com/wp-admin/setup-config.php&lt;/a&gt;&lt;/em&gt; to setup the database information then&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;go to &lt;em&gt;&lt;a href=&#34;http://appname-domain-name.rhcloud.com/wp-admin/install.php&#34;&gt;http://appname-domain-name.rhcloud.com/wp-admin/install.php&lt;/a&gt;&lt;/em&gt; to setup the tables, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that &lt;strong&gt;appname&lt;/strong&gt; should be application name that we created in step 1 in openshift and the &lt;strong&gt;domain-name&lt;/strong&gt; is your domain on openshift. That&amp;rsquo;s it, you now should have your wordpress ready to go. With this you are able to install plugins, create custom pages, etc, etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup-redirection:70edf2da10fd3f3284909ed33498cf7c&#34;&gt;Setup redirection&lt;/h2&gt;
+
+&lt;p&gt;There is only one last step until we are finally done. We want to notify our users somehow that the blog has moved.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Go in blogger to &lt;strong&gt;Settings -&amp;gt; Publishing&lt;/strong&gt; and specify the new domain for your blog there.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Go in wordpress to &lt;strong&gt;Settings -&amp;gt; Permalinks&lt;/strong&gt;, set the custom structure radio button and type&lt;/p&gt;
+
+&lt;p&gt;/%year%/%monthnum%/%postname%.html&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;there. This will make sure that links to post from the old blog go to the new blog content.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write a new post telling your users that you moved. This is only for feed purposes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I will be glad if someone finds this guide helpful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moved from Ubuntu to Arch</title>
+      <link>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</link>
+      <pubDate>Wed, 28 Sep 2011 11:46:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Intro&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After 3 years with Ubuntu on my laptop &lt;a href=&#34;http://www.lapwik.com/hp-compaq_6730s&#34;&gt;HP 6730s&lt;/a&gt;, I finally decided to switch to something faster and more reliable(I will talk about this some more)&lt;/p&gt;
+
+&lt;p&gt;Some history:
+I was an old Gentoo user before and I was using it on my desktop machine. After I got my laptop though I knew that Gentoo is not so suitable for laptops(the compilation is killing them) so Ubuntu seemed like a nice choice. Something that just works out of the box is so important for laptops - i.e. I don&amp;rsquo;t want to configure my wireless for hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The problems I had with Ubuntu:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;It tries to hide the system from me. This really annoys me - I want to be able to configure my system by hand sometimes and don&amp;rsquo;t want to find out that some service that I don&amp;rsquo;t know about, started by Ubuntu, is autoediting my config files every now and then :(&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The performance is bad - as I am mostly working with java applications and I feel them slow. I am not sure who is to blame for this but the other computers I have deployed on are working better.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It&amp;rsquo;s not using a rolling release model which makes me pray and fix my machine every new release.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Some packages are old because of the &amp;ldquo;official&amp;rdquo; release model.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So after the latest problems which I had with NetworkManager i finally decided to switch to something better. I couldn&amp;rsquo;t find why, but my machine was booting like 2 minutes and messages poped up, telling me it&amp;rsquo;s because of the network manager.&lt;/p&gt;
+
+&lt;p&gt;So far Arch seems stable, far faster(you cannot imagine), boots in 30 seconds with all services up. It just feels right.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing jdk7 in Ubuntu</title>
+      <link>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</link>
+      <pubDate>Sat, 22 May 2010 12:19:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</guid>
+      <description>&lt;p&gt;Today i wanted to try the new version of jdk and see how is the project going. Last time i checked it was too buggy to setup so i was a bit of disappointed. As I using ubuntu on my laptop i wanted to check if my distro is providing a development package for the new vm but that wasn&amp;rsquo;t the case :(. Luckily the jdk project provides some nice prepackaged binaries you can install yourself over &lt;a href=&#34;http://dlc.sun.com.edgesuite.net/jdk7/binaries/index.html&#34;&gt;here&lt;/a&gt;. After getting the binaries for my architecture(x64) and unpacking the archive i got a jdk1.7.0 directory. In ubuntu it pretty easy to set your platform default options and the tool for this is update-alternatives. Here are the commands if you have Ubuntu:&lt;/p&gt;
+
+&lt;p&gt;Move the directory to the jvm directory where it should reside:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mv jdk1.7.0/ /usr/lib/jvm 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check how many alternatives you have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo update-alternatives --config java
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Install the new alternative:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo update-alternatives --install /usr/bin/java java &amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;/usr/lib/jvm/jdk1.7.0/jre/bin/java 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 2 should be the next unused index from the last command. So if you have 2 java alternatives your new installation should have index 3&lt;/p&gt;
+
+&lt;p&gt;Set the platform default to be the new option:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;update-alternatives --config java
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now all your java applications will use the new jdk. I cannot tell the difference but as I work more with eclipse and other java tools i will be make my opinions and might share them here :)&lt;/p&gt;
+
+&lt;p&gt;Happy coding&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing flash 64bit on Kubuntu jaunty</title>
+      <link>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</link>
+      <pubDate>Tue, 22 Sep 2009 16:08:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</guid>
+      <description>&lt;p&gt;Maybe some of you know that kubuntu/ubuntu is providing 32 bit flash player and is using nspluginwrapper if you are using an 64 OS. Here the nspluginwrapper is making problems, it is making my machine unresponsible if I am watching 3 flash sites at the time and so on. I am also suspecting that it is the reason firefox crashes sometimes on some flash movies.&lt;/p&gt;
+
+&lt;p&gt;So here is the workarround. On the official website of adobe there is no 64 option so we have to dig a little more. We push a search on google and &lt;a href=&#34;http://labs.adobe.com/downloads/flashplayer10.html&#34;&gt;here is what we get &lt;/a&gt;. It seems that there is some 64bit support so we scroll down the page and find a download link. Here is the whole procedure for installing the 64bit flash :):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;       wget -c http://download.macromedia.com/pub/labs/
+       flashplayer10/libflashplayer-10.0.32.18.linux-x86_64.so.tar.gz
+       tar zxvf libflashplayer-10.0.32.18.linux-x86_64.so.tar.gz
+       mkdir -p ~/.mozilla/plugins
+       mv libflashplayer.so ~/.mozilla/plugins
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NB. Make sure that you uninstall any previous version of the flash player :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img.zemanta.com/pixy.gif?x-id=52cd7226-0452-8fc0-a3b9-67195690fcae&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Did you know movie and Kevin Kelly&#39;s web 3.0</title>
+      <link>http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</link>
+      <pubDate>Sat, 29 Aug 2009 20:13:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</guid>
+      <description>&lt;p&gt;Have you already used &lt;a href=&#34;http://twine.com&#34;&gt;twine&lt;/a&gt;, if not check it out. It is like a social bookmarking system and i am using it lately extensively for getting the latest information about the semantic technologies and the next generation web 3.0. After using it for about a week or two it starts to &amp;ldquo;know you&amp;rdquo; and recommend useful information based on your interest.&lt;/p&gt;
+
+&lt;p&gt;For example today i got &lt;a href=&#34;http://www.penn-olson.com/2009/08/26/technology-social-wows-all-in-one-video/&#34;&gt;this video&lt;/a&gt; with &amp;ldquo;&lt;strong&gt;Did you know&lt;/strong&gt;&amp;rdquo; stuff which is mostly mentioning things about the internet but there are some nice facts about the population in &lt;strong&gt;USA, India&lt;/strong&gt;. It is really interesting i think :).&lt;/p&gt;
+
+&lt;p&gt;Check &lt;a href=&#34;http://www.youtube.com/watch?v=J132shgIiuY&#34;&gt;this video&lt;/a&gt; also which was in the web 3.0 twine section of mine. This is Kevin Kelly and he is talking about web 3.0 and how he sees the WWW 20 years from now. It is a must see :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img.zemanta.com/pixy.gif?x-id=55e0d2a2-6af5-8344-9600-c5f319127185&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reloading jars at Runtime</title>
+      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <description>&lt;p&gt;I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class. So to make the jars dynamically loadable we have to make our own ClassLoader or we can use the URLClassLoader which is part of the JavaSE. The idea is that every time we load the class we should use a new object of the URLClassLoader so we don&amp;rsquo;t use the cache. And also we should have an interface so we can cast our instantiated object or the alternative is to use reflection and the Method class. But enough words here is the implementation:
+1. The Interface :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package org.nikolavp;
+
+public interface Reloadable{
+    public void method();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The Class which will reload our class by a given name:&lt;/p&gt;
+
+&lt;p&gt;import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;&lt;/p&gt;
+
+&lt;p&gt;import org.nikolavp.Reloadable;&lt;/p&gt;
+
+&lt;p&gt;public class ClassReloader{
+    public static Reloadable reload(String className) {
+        Reloadable obj = null;
+        URL jar = null;
+        try {
+            jar = new File(&amp;ldquo;jars/somejar.jar&amp;rdquo;).toURI().toURL();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        URLClassLoader loader = new URLClassLoader(new URL[] { jar },
+                        ClassLoader.getSystemClassLoader());
+        try {
+            Class clazz = loader.loadClass(className);
+            obj = (Reloadable) clazz.newInstance();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }  return obj;
+    }
+}&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Main class to test our work:&lt;/p&gt;
+
+&lt;p&gt;import org.nikolavp.Reloadable;&lt;/p&gt;
+
+&lt;p&gt;public class Main{
+    public static void main(String[] args) {
+        while (true) {
+            Reloadable object = ClassReloader.reload(&amp;ldquo;MyClassFromSomeJar&amp;rdquo;);
+            object.method();
+            try {
+                Thread.sleep(10 * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Assume that MyClassFromSomeJar exist in the jars/somejar.jar
+you can now make changes to the
+code in the external jar and see the results :)&lt;/p&gt;
+
+&lt;p&gt;Conclusion: This is one of the areas where java really shines. Try doing that with static languages like C/C++ :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img.zemanta.com/pixy.gif?x-id=7d07d2ce-7a12-8013-84c5-fd2a7211886a&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install kbgoffice qt4</title>
+      <link>http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</link>
+      <pubDate>Mon, 18 May 2009 10:17:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</guid>
+      <description>&lt;p&gt;I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;build-essential&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;qt4-dev-tools&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cmake&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;subversion(to get the source)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can get all that with a simple command &lt;strong&gt;_sudo aptitude install build-essential qt4-dev-tools cmake subversion _&lt;/strong&gt;. After satisfying all the dependencies you need to get the source code with
+&lt;strong&gt;&lt;em&gt;svn co &lt;a href=&#34;http://svn.assembla.com/svn/kbgoffice/trunk&#34;&gt;http://svn.assembla.com/svn/kbgoffice/trunk&lt;/a&gt; kbgoffice&lt;/em&gt;&lt;/strong&gt;
+go to the kbgoffice directory, create a new build directory, compile
+&lt;em&gt;&lt;strong&gt;cd kbgoffice;mkdir build;cd build;cmake ../;make&lt;/strong&gt;&lt;/em&gt;
+and if you wаnt to install the program
+&lt;em&gt;&lt;strong&gt;sudo make install&lt;/strong&gt;&lt;/em&gt;
+Then to startup the program just type kbgoffice in the konsole or the terminal client you are using &lt;Alt+F2&gt; works fine too. Have fun :D.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t find how to make an uninstall rule so there is no make uninstall option for now. To delete the files installed, just delete the /usr/local/share/bgoffice directory and the /usr/local/bin/kbgoffice executable file :).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img.zemanta.com/pixy.gif?x-id=55b39261-a999-82b1-8b34-c3842a30fc88&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing ati drivers for HP Compaq 6730s</title>
+      <link>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</link>
+      <pubDate>Thu, 07 May 2009 21:00:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</guid>
+      <description>&lt;p&gt;I have a new laptop HP Compaq 6730s. It seems that the drivers from the official kubuntu repository are not working :(. After I installed xorg-driver-fglrx and wanted to restart X - it locked. So I had to revert the xorg.conf from safe mode. Today I had the time and tried again with the official binaries from ATI and for now they seem to work really well. I enjoy the desktop effects from time to time and I can finally watch video with a mode different from sdl :). The new laptop is really faster than the nc8000 which I had up to now. I can now open 2-3 different windows of eclipse with different perspectives in each and work really fast :). Almost everything that I tested work in the laptop like wireless, microphone, camera, video, audio so if you want to buy a laptop that is supported by Linux 6730s is a nice choice.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sparse matrix multiply dummy algorithm</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
+      <pubDate>Mon, 04 May 2009 20:44:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
+      <description>&lt;p&gt;Today almost the half an hour I was trying to write that algorithm which multiplies two sparse matrix. At the end this is what I&amp;rsquo;ve got. The matrix is represented as a linkedlist of triples, because this is how they want it in our university. There were some mistakes in the code like Sparce is not with &amp;ldquo;s&amp;rdquo;, but those are pretty much syntax mistakes and i didn&amp;rsquo;t want to make changes for our teacher :).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public NumericMatrix multWith(SparseMatrix mat) throws CannotMult, 
+   OutOfMatrixRange {
+   if (!canMult(mat)){
+       throw new CannotMult();
+   }
+   SparseMatrix result = new SparseMatrix(this.rows, mat.columns);
+   if (body.isEmpty() || mat.body.isEmpty()){
+       return result;
+   }
+   Iterator&amp;lt;triple&amp;gt; itForThis = this.body.iterator();
+
+   while (itForThis.hasNext()) {
+       Triple thisElement = itForThis.next();
+       Iterator&amp;lt;triple&amp;gt; itForMat = mat.body.iterator();
+       while (itForMat.hasNext()) {
+           Triple thatElement = itForMat.next();
+           if (thatElement.i &amp;gt; thisElement.j){
+               break;
+           }
+           if (thisElement.j == thatElement.i) {
+               double value = result.elementAt(thisElement.i,
+                       thatElement.j);
+               result.setElement(thisElement.i, thatElement.j, value
+                       + thisElement.element * thatElement.element);
+           }
+       }
+   }
+   return result;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sorry for the bad code formatting but java is kind of verbose :(. All in all the code is not so nice but it was the only thing that came up and worked so I am posting it here if someone need it, because there wasn&amp;rsquo;t good simple code for that algorithm. I didn&amp;rsquo;t have the time to look at performance libraries and how they implement that, but I read some interesting stuff on wikipedia.com. I didn&amp;rsquo;t know that there was an algorthm that can multiply two Ordinary matrices in O(n^2.376). Take a look at the &lt;a href=&#34;http://en.wikipedia.org/wiki/Coppersmith%E2%80%93Winograd_algorithm&#34;&gt;page&lt;/a&gt;. If you find some free materials about the algorithm please let me know I will be glad to look into it, because I might need it for some graphic stuff I will be doing next year :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; Fixed some stuff and chan the name to SparseMatrix to be really normal :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ScribeFire - my new blogger editor</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/scribefire---my-new-blogger-editor/</link>
+      <pubDate>Mon, 04 May 2009 10:36:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/05/04/scribefire---my-new-blogger-editor/</guid>
+      <description>&lt;p&gt;This is the first time i write from ScribeFire - my new choice for blog editor. I tried almost every client out there for Linux(since i am using kubuntu) and they were all buggy for me. For example&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I didn&amp;rsquo;t manage to configure &lt;a href=&#34;http://kblogger.pwsp.net/&#34;&gt;kblogger-kde4&lt;/a&gt; - the damn thing couldn&amp;rsquo;t find my posts and entries&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kblogger.pwsp.net/&#34;&gt;Blogtk&lt;/a&gt; didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;rsquo;t find and after I installed it I got a ValueError in a property named &amp;ldquo;name&amp;rdquo; and I was too tired to look at the code.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Divel - which I didn&amp;rsquo;t like at all :)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;     I just installed ScribeFire and i didn&amp;rsquo;t have a problem with it and I also like the interface it has mostly anything. It seems that the browser will really become my desktop in a year or two. I am not sure why, but the homepage is not working for ScribeFire. Fortunately i managed to configure the plugin and it is working really nice. The interface is pretty slick and the I can see the KISS principle everywhere :).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img.zemanta.com/pixy.gif?x-id=9171bf18-22c0-8444-95b2-fa4b39b5c83b&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vrapper - a new way to develop inside Eclipse</title>
+      <link>http://nikolavp.github.io/blog/2009/04/21/vrapper---a-new-way-to-develop-inside-eclipse/</link>
+      <pubDate>Tue, 21 Apr 2009 08:38:00 +0000</pubDate>
+      
+      <guid>http://nikolavp.github.io/blog/2009/04/21/vrapper---a-new-way-to-develop-inside-eclipse/</guid>
+      <description>&lt;p&gt;Yesterday while I was again searching for nice tools and plugins for eclipse which is what I use for my day to day programming now, I found that there is a new project that want to provide vim like input scheme in eclipse. I was pretty skeptical at first because I have already tried&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://eclim.sourceforge.net/&#34;&gt;Eclim&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://vimplugin.org/&#34;&gt;Vimplugin&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and wasn&amp;rsquo;t happy from the results at all. Eclim is not bad in the last release but it is trying to make vim a full blown IDE monster which is not what I want. I just want to edit my files with the keystrokes that I am used to, but the problem is that I am now used to some of the eclipse keystrokes - +o , +m and +f come to my mind. If you are like me then you are lucky - enter &lt;a href=&#34;http://vrapper.sourceforge.net/home/&#34;&gt;Vrapper&lt;/a&gt;. The project is pretty new, but it does just what I want. Macros and find/replaces are missing for now(you can invoke the latter with +f in eclipse) but all in all most of the stuff is working fine like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* the **h**, **j**, **k**, **l** moving keys
+
+
+* **cw**, **dw**, **A**, **dd** and **cc**
+
+
+* **u** and **+r**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so if you are a long time vim user and you are trying to get used to eclipse or you are using it for something try the plugin. In my opinion it is the best solution out there.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
