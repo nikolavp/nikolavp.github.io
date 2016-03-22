@@ -1,0 +1,16 @@
+---
+author: nikolavp
+comments: true
+date: 2008-08-14 11:02:00+00:00
+layout: post
+slug: '20'
+title: Eclipse for c++
+wordpress_id: 20
+categories:
+- C++
+- eclipse
+- java
+- programming
+---
+
+Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.

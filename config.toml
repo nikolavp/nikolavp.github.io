@@ -1,0 +1,23 @@
+baseurl = "http://nikolavp.github.io"
+languageCode = "en-us"
+title = "Nikolavp's hacking"
+
+
+copyright = "Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved."
+canonifyurls = true
+paginate = 5
+
+[permalinks]
+    post = "/blog/:year/:month/:day/:title/"
+
+[params]
+    #disqusShortname = "nikolavp"
+    toc = true
+    #twitter = "nikolavp"
+
+[author]
+name = "Nikola Petrov"
+
+[indexes]
+tag = "tags"
+#topic = "topics"

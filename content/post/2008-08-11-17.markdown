@@ -1,0 +1,27 @@
+---
+author: nikolavp
+comments: true
+date: 2008-08-11 22:34:00+00:00
+layout: post
+slug: '17'
+title: kbgoffice fun
+wordpress_id: 17
+categories:
+- C++
+- kbgoffice
+- programming
+---
+
+Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype... I started to look at the classes this night and I see some bad code :(. Not sure why but many people still write ugly C++ code. The idea of the whole program is rather nice and the design is cool but there are some things that drive me nuts. For example the author reads the config file everytime he needs to save/read a property which is not efficient at all. I will try to fix some of the problems and I hope I will have the time for that. I will post a snippet which bit me today while I was working on the damn thing.
+
+
+ 1 #include <iostream>  2 #include <cstdlib>  3 #include <ifstream>  4 #include <string>  5 #include <map>  6   7   8 int main (int argc, char const* argv[])  9 { 10     std::map<std::string, std::string> myMap; 11     std::ifstream iofile("example.txt"); 12     std::string key; 13     std::string value; 14     while(! iofile.eof()){ 15         getline(iofile,key); 16         int position = key.find("="); 17         if (position == std::string::npos)  18             break; 19         value = key; 20         value.erase(0,(position+1)); 21         key.erase(key.begin()+position, key.end()); 22         std::cout << "The key is " << key << " and the value is " << value << std::endl; 23     } 24     return 0; 25 } 26 //    std::string home = getenv("HOME"); 27 //    std::ofstream file("example.txt", std::ios::app | std::ios::out); 28 //    file << "WithSplash=0\n"; 29 //    file.close();
+
+
+Well where is the problem with that you ask :? The answer is [here ](http://www.parashift.com/c++-faq-lite/input-output.html#faq-15.5) so we change the code to this:
+
+
+ 1 #include <iostream>  2 #include <cstdlib>  3 #include <fstream>  4 #include <string>  5 #include <map>  6   7   8 int main (int argc, char const* argv[])  9 { 10     std::map<std::string, std::string> myMap; 11     std::ifstream iofile("example.txt"); 12     std::string key; 13     std::string value; 14     while( getline(iofile,key) ){ 15         int position = key.find("="); 16         if (position == std::string::npos)  17             break; 18         value = key; 19         value.erase(0,(position+1)); 20         key.erase(key.begin()+position, key.end()); 21         std::cout << "The key is " << key << " and the value is " << value << std::endl; 22     } 23     return 0; 24 } 25 //    std::string home = getenv("HOME"); 26 //    std::ofstream file("example.txt", std::ios::app | std::ios::out); 27 //    file << "WithSplash=0\n"; 28 //    file.close();
+
+
+and we are ready to continue.

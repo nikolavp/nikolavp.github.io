@@ -1,0 +1,24 @@
+---
+author: nikolavp
+comments: true
+date: 2008-10-27 19:53:00+00:00
+layout: post
+slug: openfest2008
+title: Openfest2008
+wordpress_id: 29
+---
+
+From last week i finally have internet here in Sofia and things are becoming much better. This year there will be again an [Openfest](http://www.openfest.org) here in Bulgaria. I hope, that I won't miss it this time. Last year I couldn't visit the fest and there weren't any uploaded videos out there in the net. I can see that the site is now updated so i will watch the uploaded videos when i have time. This week is full of nice events. First there is a new course in TU sofia which will describe the philosophy of Open source - more information [here]( http://www.fosscourse.org/wiki/Начална_страница). Next there will be two nice lectures in our faculty:
+
+
+
+
+	
+    * [Queue Machines as Next Generation Computer Systems"](http://www.fmi.uni-sofia.bg/news_html/lekciya-ot-prof-masahiro-sova-yaponiya)
+
+	
+    * [“Web 2.0 demos with DB2”](http://www.fmi.uni-sofia.bg/news_html/za-seminara-bazi-ot-danni-i-bazi-ot-znaniya-1)
+
+
+
+

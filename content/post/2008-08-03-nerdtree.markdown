@@ -1,0 +1,56 @@
+---
+author: nikolavp
+comments: true
+date: 2008-08-03 21:27:00+00:00
+layout: post
+slug: nerdtree
+title: NERDTree
+wordpress_id: 12
+categories:
+- programming
+- vim
+---
+
+Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+
+
+
+
+	
+    * It had to be plugable to the UI and not clutter it
+
+
+
+
+
+	
+  * It had to **list** the files in a directories of my project
+
+
+
+
+
+
+	
+  * I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+
+
+
+
+
+
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete. I have tried project(this one was good), the built in explorer, some other explorers, which names i cannot remember :D.
+
+Enter [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658). That is one of the plugins that saves your day. I just put
+
+    
+    map <F6> :NERDTreeToggle
+
+
+in my vimrc and now when i hit F6 i have a list of the files in my home directory. I go to that window with either the mouse or <C-W> w and now i can use the neat features of the plugin.
+
+    
+    ? - get helpC - make the directory your ROOTo - open/close the directory(this shows the files also in the     directory as a list
+
+
+When you finish don't forget to hit F6 again :D

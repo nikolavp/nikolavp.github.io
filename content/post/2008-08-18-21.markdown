@@ -1,0 +1,16 @@
+---
+author: nikolavp
+comments: true
+date: 2008-08-18 12:34:00+00:00
+layout: post
+slug: '21'
+title: More kbgoffice fun
+wordpress_id: 21
+categories:
+- C++
+- kbgoffice
+- programming
+- Qt
+---
+
+Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).
