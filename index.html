@@ -59,14 +59,14 @@
       
       <article class="li">
   <header>
-    <div class="date">Thu, Jul 31, 2008</div>
-    <div class="title"><a href="http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./">A little benchmark with C&#43;&#43; and Java in the game.</a></div>
+    <div class="date">Wed, Aug 29, 2012</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/">Pattern matching or sort of in python</a></div>
   </header>
-  <div class="body">Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because * They don't know it's size You cannot extend it if you reach the limit The name of an array converts to a pointer to its first element at the slightest provocation(there are nice examples for this point here) So with one word arrays are not nice.</div>
+  <div class="body">I must admit that pattern matching is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&rsquo;t until late that I found about new languages on the JVM that support the same idiom. For this to work properly - the language should know how to &ldquo;destruct&rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable.</div>
 
   
   <footer>
-    <a href="http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./" class="btn btn-default">Read More…</a>
+    <a href="http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -75,11 +75,10 @@
       
       <article class="li">
   <header>
-    <div class="date">Thu, Jul 31, 2008</div>
-    <div class="title"><a href="http://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./">Nvidia and KDE4.1 problem solved.</a></div>
+    <div class="date">Sat, Jul 28, 2012</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/">Implement properties in C plus plus</a></div>
   </header>
-  <div class="body"><p>Today, while I was using the KDE 4.1 I noticed that is a bit slower than it was before with 3.5. So after a little searching(one query in gogle) on the net I found <a href="http://techbase.kde.org/User:Lemma/KDE4-NVIDIA">this</a> page which just saved my day. I can now say that KDE is faster than ever it was. I can&rsquo;t believe they managed to make the damn thing even faster :). Nice work guys, keep it up!</p>
-</div>
+  <div class="body"></div>
 
   
 </article>
@@ -88,14 +87,14 @@
       
       <article class="li">
   <header>
-    <div class="date">Fri, Jul 25, 2008</div>
-    <div class="title"><a href="http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/">Nice way to keep the lines indented in vim</a></div>
+    <div class="date">Sat, Jul 28, 2012</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/">Using SSH without password</a></div>
   </header>
-  <div class="body">Here is one more vim tipp. I just put a new keybinding to my .vimrc file, thanks to \amethyst from #vim@freenode.net :). Here it is inoremap &lt;expr&gt; &lt;CR&gt; (col(&quot;$&quot;)==col(&quot;.&quot;) ? &quot;\&lt;ESC&gt;=a{\&lt;C-O&gt;o&quot; : &quot;\&lt;CR&gt;&quot;) This will indent the whole block before the line if you hit on the end of the code you are writing in insert mode. If you are not at the end of the line you will get the default behaviour of .</div>
+  <div class="body">The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this: ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons: It requires you to know the IP address or the DNS name whatsoever instead of doing an alias for yourself You will have to remember the username for that host You will have to remember the password for that host You will have to break your fingers to type that over and over again Well if you are like me you most probably don&rsquo;t want to type all that much just do your work.</div>
 
   
   <footer>
-    <a href="http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/" class="btn btn-default">Read More…</a>
+    <a href="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -104,14 +103,14 @@
       
       <article class="li">
   <header>
-    <div class="date">Wed, Jul 23, 2008</div>
-    <div class="title"><a href="http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/">Highlight for Qt classes in vim</a></div>
+    <div class="date">Wed, Mar 14, 2012</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/">Another Skype instance may exist</a></div>
   </header>
-  <div class="body">Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my ~/.vim/syntax/cpp.vim. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&rsquo;s web site ;). UPDATE: Today Vidas Katinas send me the modified version so i have updated the link.</div>
+  <div class="body">Today I got this error message from skype in Linux while I was trying to login. After many attempts to get rid of the message by restarting skype, I finally googled the message and found out that there are two .lck files that need to be deleted. But after trying it and restarting it again, this didn&rsquo;t solve it. If you happen to be one of those unlucky &ldquo;souls&rdquo;. Do the following: cd ~/.Skype/ find -name '*.lck' -exec rm {} + mv ${old_profile} ${old_profile}.back This deletes all .lck files and makes a backup of your login history data, assuming ${old_profile} is the name of your skype login name.</div>
 
   
   <footer>
-    <a href="http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/" class="btn btn-default">Read More…</a>
+    <a href="http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -120,14 +119,14 @@
       
       <article class="li">
   <header>
-    <div class="date">Wed, Jul 23, 2008</div>
-    <div class="title"><a href="http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/">Making abbreviations persistent in vim</a></div>
+    <div class="date">Sun, Feb 19, 2012</div>
+    <div class="title"><a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/">Moved from blogger to wordpress</a></div>
   </header>
-  <div class="body">If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type :iabbrev wrongstring wantedstring in command mode and the next time you type the word wrong vim will fix it. So where is the problem? The problem is that when you type that in command mode it is not persistent between sessions.</div>
+  <div class="body">The why You are currently reading this post on my new blog, built on top of Wordpress and OpenShift. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons: small screen/content width - this was the main reason that made me move. The width of the box content is so small that it&rsquo;s really hard to post a snippet of code.</div>
 
   
   <footer>
-    <a href="http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/" class="btn btn-default">Read More…</a>
+    <a href="http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -139,11 +138,11 @@
   <ul class="pager">
 
     
-    <li><a href="http://nikolavp.github.io/page/7">Previous</a></li>
+    <li class="disabled"><a href="#">Previous</a></li>
     
 
     
-    <li><a href="http://nikolavp.github.io/page/9">Next</a></li>
+    <li><a href="http://nikolavp.github.io/page/2">Next</a></li>
     
 
   </ul>
@@ -192,7 +191,15 @@
     </div>
     <div class="list-group">
       
-      <a href="http://nikolavp.github.iotags/wordpress" class="list-group-item">wordpress</a>
+      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
+      
+      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
+      
+      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
+      
+      <a href="http://nikolavp.github.iotags/bash" class="list-group-item">bash</a>
+      
+      <a href="http://nikolavp.github.iotags/configuration" class="list-group-item">configuration</a>
       
       <a href="http://nikolavp.github.iotags/haskell" class="list-group-item">haskell</a>
       
@@ -203,14 +210,6 @@
       <a href="http://nikolavp.github.iotags/linux" class="list-group-item">linux</a>
       
       <a href="http://nikolavp.github.iotags/skype" class="list-group-item">skype</a>
-      
-      <a href="http://nikolavp.github.iotags/blog" class="list-group-item">blog</a>
-      
-      <a href="http://nikolavp.github.iotags/pattern-matching" class="list-group-item">pattern-matching</a>
-      
-      <a href="http://nikolavp.github.iotags/python" class="list-group-item">python</a>
-      
-      <a href="http://nikolavp.github.iotags/c" class="list-group-item">c</a>
       
     </div>
   </div>
