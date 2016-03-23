@@ -10,7 +10,7 @@
 
   <title>
     
-      kbgoffice fun &middot; Nikolavp&#39;s hacking
+      Nikolavp&#39;s hacking &middot; 
     
   </title>
 
@@ -41,7 +41,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
+    <a class="sidebar-nav-item  active " href="http://nikolavp.github.io/">Home</a>
     <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
 
     
@@ -152,10 +152,32 @@
       <div class="container content">
 
 
-<div class="post">
-  <h1 class="post-title">kbgoffice fun</h1>
-  <span class="post-date">Aug 11 2008</span>
-  <p>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&hellip; I started to look at the classes this night and I see some bad code :(. Not sure why but many people still write ugly C++ code. The idea of the whole program is rather nice and the design is cool but there are some things that drive me nuts. For example the author reads the config file everytime he needs to save/read a property which is not efficient at all. I will try to fix some of the problems and I hope I will have the time for that. I will post a snippet which bit me today while I was working on the damn thing.</p>
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/">kbgoffice again working(sort of)</a></h1>
+        <span class="post-date">Aug 12 2008</span>
+        <p>The code for kbgoffice is working already on my machine. It is not really ported to Qt4, because right now it relays on the qt3support which will not be there and for good ;). There are also some annoying bugs(I will see where they came from, so keep calm :P). The instructions to compile the code(notice there is no target to install it for now) are in the INSTALL file. To get the code you will need subversion. Search google if you don&rsquo;t know how to get it. The command to checkout the code is</p>
+
+<pre><code>svn co http://svn.assembla.com/svn/kbgoffice/trunk kbgoffice;cd kbgoffice
+</code></pre>
+
+<p>now</p>
+
+<pre><code>cat INSTALL
+</code></pre>
+
+<p>and follow the instructions. You will also need the dictionary files which you can find over <a href="http://bgoffice.sourceforge.net/">here</a></p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/">kbgoffice fun</a></h1>
+        <span class="post-date">Aug 11 2008</span>
+        <p>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&hellip; I started to look at the classes this night and I see some bad code :(. Not sure why but many people still write ugly C++ code. The idea of the whole program is rather nice and the design is cool but there are some things that drive me nuts. For example the author reads the config file everytime he needs to save/read a property which is not efficient at all. I will try to fix some of the problems and I hope I will have the time for that. I will post a snippet which bit me today while I was working on the damn thing.</p>
 
 <p> 1 #include <iostream>  2 #include <cstdlib>  3 #include <ifstream>  4 #include <string>  5 #include <map>  6   7   8 int main (int argc, char const* argv[])  9 { 10     std::map<std::string, std::string> myMap; 11     std::ifstream iofile(&ldquo;example.txt&rdquo;); 12     std::string key; 13     std::string value; 14     while(! iofile.eof()){ 15         getline(iofile,key); 16         int position = key.find(&ldquo;=&rdquo;); 17         if (position == std::string::npos)  18             break; 19         value = key; 20         value.erase(0,(position+1)); 21         key.erase(key.begin()+position, key.end()); 22         std::cout &lt;&lt; &ldquo;The key is &ldquo; &lt;&lt; key &lt;&lt; &ldquo; and the value is &ldquo; &lt;&lt; value &lt;&lt; std::endl; 23     } 24     return 0; 25 } 26 //    std::string home = getenv(&ldquo;HOME&rdquo;); 27 //    std::ofstream file(&ldquo;example.txt&rdquo;, std::ios::app | std::ios::out); 28 //    file &lt;&lt; &ldquo;WithSplash=0\n&rdquo;; 29 //    file.close();</p>
 
@@ -165,6 +187,25 @@
 
 <p>and we are ready to continue.</p>
 
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./">The Aurora project.</a></h1>
+        <span class="post-date">Aug 9 2008</span>
+        <p>Maybe you&rsquo;ve heard about the Aurora project from mozilla labs, well I wasn&rsquo;t and I was impressed from the videos over <a href="http://www.jroller.com/desmax/entry/mozilla_aurora">here</a>. It seems that maybe the Web will outperform the Desktop some day. I hope that it doesn&rsquo;t happen so soon, because I really like the Desktop more and most of the applications I use today are Desktop based(mostly Qt/KDE).</p>
+
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <a class="pagination-item older" href="http://nikolavp.github.io/page/11/">Older</a>
+  
+
+  
+  <a class="pagination-item newer" href="http://nikolavp.github.io/page/9/">Newer</a>
+  
 </div>
 
       </div>

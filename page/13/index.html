@@ -10,7 +10,7 @@
 
   <title>
     
-      Highlight for Qt classes in vim &middot; Nikolavp&#39;s hacking
+      Nikolavp&#39;s hacking &middot; 
     
   </title>
 
@@ -41,7 +41,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
+    <a class="sidebar-nav-item  active " href="http://nikolavp.github.io/">Home</a>
     <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
 
     
@@ -152,10 +152,34 @@
       <div class="container content">
 
 
-<div class="post">
-  <h1 class="post-title">Highlight for Qt classes in vim</h1>
-  <span class="post-date">Jul 23 2008</span>
-  <p>Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my <a href="https://github.com/nikolavp/configs/blob/master/vim/syntax/cpp.vim">~/.vim/syntax/cpp.vim</a>. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&rsquo;s web site ;).</p>
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./">Nvidia and KDE4.1 problem solved.</a></h1>
+        <span class="post-date">Jul 31 2008</span>
+        <p>Today, while I was using the KDE 4.1 I noticed that is a bit slower than it was before with 3.5. So after a little searching(one query in gogle) on the net I found <a href="http://techbase.kde.org/User:Lemma/KDE4-NVIDIA">this</a> page which just saved my day. I can now say that KDE is faster than ever it was. I can&rsquo;t believe they managed to make the damn thing even faster :). Nice work guys, keep it up!</p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/">Nice way to keep the lines indented in vim</a></h1>
+        <span class="post-date">Jul 25 2008</span>
+        <p>Here is one more vim tipp. I just put a new keybinding to my .vimrc file, thanks to \amethyst from #vim@freenode.net :). Here it is</p>
+
+<pre><code>inoremap &lt;expr&gt; &lt;CR&gt; (col(&quot;$&quot;)==col(&quot;.&quot;) ? &quot;\&lt;ESC&gt;=a{\&lt;C-O&gt;o&quot; : &quot;\&lt;CR&gt;&quot;)
+</code></pre>
+
+<p>This will indent the whole block before the line if you hit <CR> on the end of the code you are writing in insert mode. If you are not at the end of the line you will get the default behaviour of <CR>. I was not sure how to implement that, but \amethyst really helped me on IRC. Once more this shows the power of chatting with experienced people who know the project very well. Viva open source :).</p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/">Highlight for Qt classes in vim</a></h1>
+        <span class="post-date">Jul 23 2008</span>
+        <p>Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my <a href="https://github.com/nikolavp/configs/blob/master/vim/syntax/cpp.vim">~/.vim/syntax/cpp.vim</a>. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&rsquo;s web site ;).</p>
 
 <p>UPDATE:
 Today Vidas Katinas send me the modified version so i have updated the link. I have also added a checking for a variable. I am also using stl lately so here is the installation guide if you use them both:</p>
@@ -182,6 +206,18 @@ wget -c http://www.vim.org/scripts/download_script.php?src_id=8628 -O ~/.vim/aft
 
 <p>if you have made changes.</p>
 
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <a class="pagination-item older" href="http://nikolavp.github.io/page/14/">Older</a>
+  
+
+  
+  <a class="pagination-item newer" href="http://nikolavp.github.io/page/12/">Newer</a>
+  
 </div>
 
       </div>

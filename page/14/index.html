@@ -10,7 +10,7 @@
 
   <title>
     
-      Making abbreviations persistent in vim &middot; Nikolavp&#39;s hacking
+      Nikolavp&#39;s hacking &middot; 
     
   </title>
 
@@ -41,7 +41,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
+    <a class="sidebar-nav-item  active " href="http://nikolavp.github.io/">Home</a>
     <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
 
     
@@ -152,10 +152,15 @@
       <div class="container content">
 
 
-<div class="post">
-  <h1 class="post-title">Making abbreviations persistent in vim</h1>
-  <span class="post-date">Jul 23 2008</span>
-  <p>If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type</p>
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/">Making abbreviations persistent in vim</a></h1>
+        <span class="post-date">Jul 23 2008</span>
+        <p>If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type</p>
 
 <pre><code>:iabbrev wrongstring wantedstring
 </code></pre>
@@ -173,6 +178,41 @@
 <p>and that&rsquo;s all ;)
 Happy vimming</p>
 
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/">Renaming a variable in gvim</a></h1>
+        <span class="post-date">Jul 21 2008</span>
+        <p>Some of you may be missing the nice IDE&rsquo;s and their neat features when you are editing in gvim. I was myself a long time Eclipse user, but I found that it doesn&rsquo;t make me more productive, but just eat the resources of my machine. I missed the renaming variable feature in gvim for some time now. Today this is over I was reading the manual of vim and found what I was looking for. We all know the substitute command, but I was not sure how to replace the variable with one command for all files in the project. So here is what I have now in my .vimrc:</p>
+
+<pre><code>fun! BuffersRenameVar(cword, newvar)        let word = a:cword        let newvar = a:newvar        let replace = &quot;:bufdo %s/\\\
+</code></pre>
+
+<p>You just hit \brn for buffer rename and have to change the &ldquo;nvname&rdquo;
+with the new name of the variable and that&rsquo;s all :). This will ask you
+to rename every appearance of the variable in all open buffers. Don&rsquo;t
+forget to open all all your files in vim. This will also put a global
+mark named &ldquo;R&rdquo; so you can continue your work. Happy vimming</p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/19/6.00-in-tu-sofia/">6.00 in TU Sofia</a></h1>
+        <span class="post-date">Jul 19 2008</span>
+        <p>I finally will manage to go to university because I&rsquo;ve got 6 on one of the exams here in Bulgaria. Finally all of that math will be over for now :).</p>
+
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <span class="pagination-item older">Older</span>
+  
+
+  
+  <a class="pagination-item newer" href="http://nikolavp.github.io/page/13/">Newer</a>
+  
 </div>
 
       </div>

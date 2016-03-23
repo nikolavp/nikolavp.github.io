@@ -10,7 +10,7 @@
 
   <title>
     
-      A little benchmark with C&#43;&#43; and Java in the game. &middot; Nikolavp&#39;s hacking
+      Nikolavp&#39;s hacking &middot; 
     
   </title>
 
@@ -41,7 +41,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
+    <a class="sidebar-nav-item  active " href="http://nikolavp.github.io/">Home</a>
     <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
 
     
@@ -152,10 +152,59 @@
       <div class="container content">
 
 
-<div class="post">
-  <h1 class="post-title">A little benchmark with C&#43;&#43; and Java in the game.</h1>
-  <span class="post-date">Jul 31 2008</span>
-  <p>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because</p>
+
+
+
+<div class="posts">
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/08/03/nerdtree/">NERDTree</a></h1>
+        <span class="post-date">Aug 3 2008</span>
+        <p>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.</p>
+
+<pre><code>* It had to be plugable to the UI and not clutter it
+</code></pre>
+
+<ul>
+<li><p>It had to <strong>list</strong> the files in a directories of my project</p></li>
+
+<li><p>I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab</p></li>
+</ul>
+
+<p>There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete. I have tried project(this one was good), the built in explorer, some other explorers, which names i cannot remember :D.</p>
+
+<p>Enter <a href="http://www.vim.org/scripts/script.php?script_id=1658">NERDTree</a>. That is one of the plugins that saves your day. I just put</p>
+
+<pre><code>map &lt;F6&gt; :NERDTreeToggle
+</code></pre>
+
+<p>in my vimrc and now when i hit F6 i have a list of the files in my home directory. I go to that window with either the mouse or <C-W> w and now i can use the neat features of the plugin.</p>
+
+<pre><code>? - get helpC - make the directory your ROOTo - open/close the directory(this shows the files also in the     directory as a list
+</code></pre>
+
+<p>When you finish don&rsquo;t forget to hit F6 again :D</p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/">Don&#39;t trust garbage collectors</a></h1>
+        <span class="post-date">Aug 3 2008</span>
+        <p>I recently read <a href="http://bootstrapping.wordpress.com/2007/02/16/memory-management-is-still-your-responsibility/">This blog post</a> and the author has a nice point about garbage collectors. When we program in languages with that feature we should not blindly trust the automatic memory management for <strong>everything</strong>. Most of the time it is ok, but sometimes you have to think about memory management in those languages too.
+In the blog post Tahseen Ur Rehman gives an example with a thread which was holding some references to the objects so they could not be deleted, so the users were getting OutOfMemoryErrors. The author also warn us that we should <strong>not</strong> trust the lie</p>
+
+<p>“In some programming languages, memory management is the programmer’s responsibility.
+… …
+An alternate approach to memory management that is now commonly utilized, especially by most modern object-oriented languages, is automatic management by a program called a garbage collector“</p>
+
+<p>There is also a nice example in Effective Java with the same point. So next time when we want to do something <em>smart</em> with the language, we should think if it is ok for the garbage collector and it will be able to do it&rsquo;s job. I find that most of the time those kind of errors are found in concurrent programs and <em>hacky</em> arrays.</p>
+
+    </div>
+  
+    <div class="post">
+        <h1 class="post-title"><a href="http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./">A little benchmark with C&#43;&#43; and Java in the game.</a></h1>
+        <span class="post-date">Jul 31 2008</span>
+        <p>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because</p>
 
 <pre><code>* They don't know it's size
 </code></pre>
@@ -240,6 +289,18 @@ sleep(60)
 }
 </code></p>
 
+    </div>
+  
+</div>
+
+<div class="pagination">
+  
+  <a class="pagination-item older" href="http://nikolavp.github.io/page/13/">Older</a>
+  
+
+  
+  <a class="pagination-item newer" href="http://nikolavp.github.io/page/11/">Newer</a>
+  
 </div>
 
       </div>
