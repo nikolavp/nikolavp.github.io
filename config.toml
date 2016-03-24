@@ -1,6 +1,7 @@
 baseurl = "http://nikolavp.github.io/"
 languageCode = "en-us"
 title = "Nikolavp's hacking"
+pygmentsuseclasses = false
 
 
 copyright = "Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved."
@@ -26,6 +27,8 @@ tag = "tags"
 # Properties for the lanyon theme
     Title = "Nikolavp's hacking"
     DateForm = "Jan 2 2006"
+    Author = "Nikola Petrov"
+    SyntaxHighlightTheme = "solarized_dark.min.css"
 # site description, will show under navigation
     description = ""
 
