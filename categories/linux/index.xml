@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/linux/</link>
+    <description>Recent content in Linux on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 28 Sep 2011 11:46:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moved from Ubuntu to Arch</title>
+      <link>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</link>
+      <pubDate>Wed, 28 Sep 2011 11:46:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</guid>
+      <description>Intro
+After 3 years with Ubuntu on my laptop HP 6730s, I finally decided to switch to something faster and more reliable(I will talk about this some more)
+Some history: I was an old Gentoo user before and I was using it on my desktop machine. After I got my laptop though I knew that Gentoo is not so suitable for laptops(the compilation is killing them) so Ubuntu seemed like a nice choice.</description>
+    </item>
+    
+    <item>
+      <title>Installing ati drivers for HP Compaq 6730s</title>
+      <link>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</link>
+      <pubDate>Thu, 07 May 2009 21:00:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</guid>
+      <description>I have a new laptop HP Compaq 6730s. It seems that the drivers from the official kubuntu repository are not working :(. After I installed xorg-driver-fglrx and wanted to restart X - it locked. So I had to revert the xorg.conf from safe mode. Today I had the time and tried again with the official binaries from ATI and for now they seem to work really well. I enjoy the desktop effects from time to time and I can finally watch video with a mode different from sdl :).</description>
+    </item>
+    
+    <item>
+      <title>ScribeFire - my new blogger editor</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
+      <pubDate>Mon, 04 May 2009 10:36:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
+      <description>This is the first time i write from ScribeFire - my new choice for blog editor. I tried almost every client out there for Linux(since i am using kubuntu) and they were all buggy for me. For example
+I didn&amp;rsquo;t manage to configure kblogger-kde4 - the damn thing couldn&amp;rsquo;t find my posts and entries
+Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;rsquo;t find and after I installed it I got a ValueError in a property named &amp;ldquo;name&amp;rdquo; and I was too tired to look at the code.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 28 Jul 2012 20:23:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implement properties in C plus plus</title>
+      <link>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</link>
+      <pubDate>Sat, 28 Jul 2012 20:23:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</guid>
+      <description>Here is some tricky code in C++ that I was watching recently and decided to post here for future references. Sometime the usage of operator overloading in C++ amuses me so much. Apperently there is a way to implement properties that look the same as normal properties and behave almost the same. The only problem as always is that when you get a compile time error - the messages are pretty confusing if you don&amp;rsquo;t know what&amp;rsquo;s going on.</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; can have nasty syntax sometimes</title>
+      <link>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
+      <pubDate>Mon, 01 Sep 2008 16:40:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
+      <description>Hmm today on IRC in the channel ##C++ @ Freenode someone posted the following code
+/*In g++ this does not work*/ template struct hello { hello(){}; ~hello(){}; template int world() { return _b+_a; } }; template void try_hello() { hello h; h.world(); }
+so i tried to help the person telling him that he should use a typename before h.world(); because it can ambitious for the compiler. It turns out that the right solution was</description>
+    </item>
+    
+    <item>
+      <title>More kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
+      <pubDate>Mon, 18 Aug 2008 12:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
+      <description>Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).</description>
+    </item>
+    
+    <item>
+      <title>Eclipse for c&#43;&#43;</title>
+      <link>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
+      <pubDate>Thu, 14 Aug 2008 11:02:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
+      <description>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</description>
+    </item>
+    
+    <item>
+      <title>Supress some warning in vim</title>
+      <link>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
+      <pubDate>Wed, 13 Aug 2008 13:06:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
+      <description>Maybe you know that vim parses the output from the compiler so it can jump to the right line which cause the error(:h quickfix for more info). Well it seems that the default compiler options parse even warning which are sometimes pretty annoying. There were some warning for depracated conversion from the compiler because of xmp files. Well i am sure that i don&amp;rsquo;t want to see those. So here is what i have in my ~/.</description>
+    </item>
+    
+    <item>
+      <title>kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</link>
+      <pubDate>Mon, 11 Aug 2008 22:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</guid>
+      <description>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&amp;hellip; I started to look at the classes this night and I see some bad code :(.</description>
+    </item>
+    
+    <item>
+      <title>A little benchmark with C&#43;&#43; and Java in the game.</title>
+      <link>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</link>
+      <pubDate>Thu, 31 Jul 2008 20:59:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</guid>
+      <description>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because
+* They don&#39;t know it&#39;s size You cannot extend it if you reach the limit</description>
+    </item>
+    
+  </channel>
+</rss>

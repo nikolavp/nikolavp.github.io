@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eclipse on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/eclipse/</link>
+    <description>Recent content in eclipse on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 04 May 2009 20:44:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sparse matrix multiply dummy algorithm</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
+      <pubDate>Mon, 04 May 2009 20:44:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
+      <description>Today almost the half an hour I was trying to write that algorithm which multiplies two sparse matrix. At the end this is what I&amp;rsquo;ve got. The matrix is represented as a linkedlist of triples, because this is how they want it in our university. There were some mistakes in the code like Sparce is not with &amp;ldquo;s&amp;rdquo;, but those are pretty much syntax mistakes and i didn&amp;rsquo;t want to make changes for our teacher :).</description>
+    </item>
+    
+    <item>
+      <title>Trac and Eclipse</title>
+      <link>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</link>
+      <pubDate>Thu, 18 Sep 2008 10:03:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</guid>
+      <description>Yesterday I wanted to integrate Trac tasks from the kbgoffice task list in my IDE. I was sure that eclipse should have that feature so I search in google and found that indeed there is a connector for Trac in mylyn-extras. Well i wanted to find an update site for that but it seems there isn&amp;rsquo;t any. So i downloaded the the extras version from the main download page and installed it locally.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse for c&#43;&#43;</title>
+      <link>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
+      <pubDate>Thu, 14 Aug 2008 11:02:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
+      <description>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</description>
+    </item>
+    
+  </channel>
+</rss>

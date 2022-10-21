@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/software/</link>
+    <description>Recent content in software on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 14 Mar 2012 08:27:12 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Another Skype instance may exist</title>
+      <link>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</link>
+      <pubDate>Wed, 14 Mar 2012 08:27:12 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</guid>
+      <description>Today I got this error message from skype in Linux while I was trying to login. After many attempts to get rid of the message by restarting skype, I finally googled the message and found out that there are two .lck files that need to be deleted. But after trying it and restarting it again, this didn&amp;rsquo;t solve it. If you happen to be one of those unlucky &amp;ldquo;souls&amp;rdquo;. Do the following:</description>
+    </item>
+    
+  </channel>
+</rss>

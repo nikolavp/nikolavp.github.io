@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kbgoffice on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/kbgoffice/</link>
+    <description>Recent content in kbgoffice on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 18 Sep 2008 10:03:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/kbgoffice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trac and Eclipse</title>
+      <link>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</link>
+      <pubDate>Thu, 18 Sep 2008 10:03:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</guid>
+      <description>Yesterday I wanted to integrate Trac tasks from the kbgoffice task list in my IDE. I was sure that eclipse should have that feature so I search in google and found that indeed there is a connector for Trac in mylyn-extras. Well i wanted to find an update site for that but it seems there isn&amp;rsquo;t any. So i downloaded the the extras version from the main download page and installed it locally.</description>
+    </item>
+    
+    <item>
+      <title>More kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
+      <pubDate>Mon, 18 Aug 2008 12:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
+      <description>Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).</description>
+    </item>
+    
+    <item>
+      <title>kbgoffice again working(sort of)</title>
+      <link>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</link>
+      <pubDate>Tue, 12 Aug 2008 19:07:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</guid>
+      <description>The code for kbgoffice is working already on my machine. It is not really ported to Qt4, because right now it relays on the qt3support which will not be there and for good ;). There are also some annoying bugs(I will see where they came from, so keep calm :P). The instructions to compile the code(notice there is no target to install it for now) are in the INSTALL file. To get the code you will need subversion.</description>
+    </item>
+    
+    <item>
+      <title>kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</link>
+      <pubDate>Mon, 11 Aug 2008 22:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</guid>
+      <description>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&amp;hellip; I started to look at the classes this night and I see some bad code :(.</description>
+    </item>
+    
+  </channel>
+</rss>

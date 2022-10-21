@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trac on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/trac/</link>
+    <description>Recent content in trac on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 18 Sep 2008 10:03:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/trac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trac and Eclipse</title>
+      <link>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</link>
+      <pubDate>Thu, 18 Sep 2008 10:03:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</guid>
+      <description>Yesterday I wanted to integrate Trac tasks from the kbgoffice task list in my IDE. I was sure that eclipse should have that feature so I search in google and found that indeed there is a connector for Trac in mylyn-extras. Well i wanted to find an update site for that but it seems there isn&amp;rsquo;t any. So i downloaded the the extras version from the main download page and installed it locally.</description>
+    </item>
+    
+  </channel>
+</rss>

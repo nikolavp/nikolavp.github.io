@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/programming/</link>
+    <description>Recent content in programming on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pattern matching or sort of in python</title>
+      <link>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
+      <pubDate>Wed, 29 Aug 2012 15:18:05 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
+      <description>I must admit that pattern matching is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&amp;rsquo;t until late that I found about new languages on the JVM that support the same idiom.
+For this to work properly - the language should know how to &amp;ldquo;destruct&amp;rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable.</description>
+    </item>
+    
+    <item>
+      <title>Implement properties in C plus plus</title>
+      <link>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</link>
+      <pubDate>Sat, 28 Jul 2012 20:23:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</guid>
+      <description>Here is some tricky code in C++ that I was watching recently and decided to post here for future references. Sometime the usage of operator overloading in C++ amuses me so much. Apperently there is a way to implement properties that look the same as normal properties and behave almost the same. The only problem as always is that when you get a compile time error - the messages are pretty confusing if you don&amp;rsquo;t know what&amp;rsquo;s going on.</description>
+    </item>
+    
+    <item>
+      <title>Installing flash 64bit on Kubuntu jaunty</title>
+      <link>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</link>
+      <pubDate>Tue, 22 Sep 2009 16:08:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</guid>
+      <description>Maybe some of you know that kubuntu/ubuntu is providing 32 bit flash player and is using nspluginwrapper if you are using an 64 OS. Here the nspluginwrapper is making problems, it is making my machine unresponsible if I am watching 3 flash sites at the time and so on. I am also suspecting that it is the reason firefox crashes sometimes on some flash movies.
+So here is the workarround. On the official website of adobe there is no 64 option so we have to dig a little more.</description>
+    </item>
+    
+    <item>
+      <title>Reloading jars at Runtime</title>
+      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <description>I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class.</description>
+    </item>
+    
+    <item>
+      <title>Sparse matrix multiply dummy algorithm</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
+      <pubDate>Mon, 04 May 2009 20:44:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
+      <description>Today almost the half an hour I was trying to write that algorithm which multiplies two sparse matrix. At the end this is what I&amp;rsquo;ve got. The matrix is represented as a linkedlist of triples, because this is how they want it in our university. There were some mistakes in the code like Sparce is not with &amp;ldquo;s&amp;rdquo;, but those are pretty much syntax mistakes and i didn&amp;rsquo;t want to make changes for our teacher :).</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; can have nasty syntax sometimes</title>
+      <link>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
+      <pubDate>Mon, 01 Sep 2008 16:40:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
+      <description>Hmm today on IRC in the channel ##C++ @ Freenode someone posted the following code
+/*In g++ this does not work*/ template struct hello { hello(){}; ~hello(){}; template int world() { return _b+_a; } }; template void try_hello() { hello h; h.world(); }
+so i tried to help the person telling him that he should use a typename before h.world(); because it can ambitious for the compiler. It turns out that the right solution was</description>
+    </item>
+    
+    <item>
+      <title>Back from the vacation</title>
+      <link>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</link>
+      <pubDate>Sat, 30 Aug 2008 09:46:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</guid>
+      <description>Hmm yesterday i finally came back from the vacation in the mountain. I prefer it instead of the sea, because the sea is too dirty in the last years. As you maybe know i live in Bulgaria and it is near the Black sea which is pretty much aweful. Most of the time i was fishing swimming in a nice Pool near Ribarica. I also almost read Code complete second edition which is pretty old book but is still adequate for most of the tips.</description>
+    </item>
+    
+    <item>
+      <title>More kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
+      <pubDate>Mon, 18 Aug 2008 12:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
+      <description>Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).</description>
+    </item>
+    
+    <item>
+      <title>Eclipse for c&#43;&#43;</title>
+      <link>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
+      <pubDate>Thu, 14 Aug 2008 11:02:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
+      <description>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</description>
+    </item>
+    
+    <item>
+      <title>Supress some warning in vim</title>
+      <link>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
+      <pubDate>Wed, 13 Aug 2008 13:06:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
+      <description>Maybe you know that vim parses the output from the compiler so it can jump to the right line which cause the error(:h quickfix for more info). Well it seems that the default compiler options parse even warning which are sometimes pretty annoying. There were some warning for depracated conversion from the compiler because of xmp files. Well i am sure that i don&amp;rsquo;t want to see those. So here is what i have in my ~/.</description>
+    </item>
+    
+    <item>
+      <title>kbgoffice again working(sort of)</title>
+      <link>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</link>
+      <pubDate>Tue, 12 Aug 2008 19:07:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</guid>
+      <description>The code for kbgoffice is working already on my machine. It is not really ported to Qt4, because right now it relays on the qt3support which will not be there and for good ;). There are also some annoying bugs(I will see where they came from, so keep calm :P). The instructions to compile the code(notice there is no target to install it for now) are in the INSTALL file. To get the code you will need subversion.</description>
+    </item>
+    
+    <item>
+      <title>kbgoffice fun</title>
+      <link>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</link>
+      <pubDate>Mon, 11 Aug 2008 22:34:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</guid>
+      <description>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&amp;hellip; I started to look at the classes this night and I see some bad code :(.</description>
+    </item>
+    
+    <item>
+      <title>Problem with file endings</title>
+      <link>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</link>
+      <pubDate>Mon, 04 Aug 2008 15:40:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</guid>
+      <description>Today I had the same problem with mixed file endings. It seems that many editors are still dealing bad with that on different platforms, so you get different line endings. This times instead of manually dealing with the problem I googled and it seems that there is a nice workaround, you just need to type
+:%s/\r// and you are done. This will take care of you, I also have ff=unix in most of my files and in my vimrc.</description>
+    </item>
+    
+    <item>
+      <title>NERDTree</title>
+      <link>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</link>
+      <pubDate>Sun, 03 Aug 2008 21:27:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</guid>
+      <description>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+* It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
+I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t trust garbage collectors</title>
+      <link>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</link>
+      <pubDate>Sun, 03 Aug 2008 07:22:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</guid>
+      <description>I recently read This blog post and the author has a nice point about garbage collectors. When we program in languages with that feature we should not blindly trust the automatic memory management for everything. Most of the time it is ok, but sometimes you have to think about memory management in those languages too. In the blog post Tahseen Ur Rehman gives an example with a thread which was holding some references to the objects so they could not be deleted, so the users were getting OutOfMemoryErrors.</description>
+    </item>
+    
+    <item>
+      <title>A little benchmark with C&#43;&#43; and Java in the game.</title>
+      <link>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</link>
+      <pubDate>Thu, 31 Jul 2008 20:59:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</guid>
+      <description>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because
+* They don&#39;t know it&#39;s size You cannot extend it if you reach the limit</description>
+    </item>
+    
+    <item>
+      <title>Nice way to keep the lines indented in vim</title>
+      <link>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</link>
+      <pubDate>Fri, 25 Jul 2008 21:59:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</guid>
+      <description>Here is one more vim tipp. I just put a new keybinding to my .vimrc file, thanks to \amethyst from #vim@freenode.net :). Here it is
+inoremap &amp;lt;expr&amp;gt; &amp;lt;CR&amp;gt; (col(&amp;quot;$&amp;quot;)==col(&amp;quot;.&amp;quot;) ? &amp;quot;\&amp;lt;ESC&amp;gt;=a{\&amp;lt;C-O&amp;gt;o&amp;quot; : &amp;quot;\&amp;lt;CR&amp;gt;&amp;quot;) This will indent the whole block before the line if you hit on the end of the code you are writing in insert mode. If you are not at the end of the line you will get the default behaviour of .</description>
+    </item>
+    
+    <item>
+      <title>Making abbreviations persistent in vim</title>
+      <link>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</link>
+      <pubDate>Wed, 23 Jul 2008 10:47:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</guid>
+      <description>If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type
+:iabbrev wrongstring wantedstring in command mode and the next time you type the word wrong vim will fix it. So where is the problem? The problem is that when you type that in command mode it is not persistent between sessions.</description>
+    </item>
+    
+    <item>
+      <title>Renaming a variable in gvim</title>
+      <link>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</link>
+      <pubDate>Mon, 21 Jul 2008 18:49:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</guid>
+      <description>Some of you may be missing the nice IDE&amp;rsquo;s and their neat features when you are editing in gvim. I was myself a long time Eclipse user, but I found that it doesn&amp;rsquo;t make me more productive, but just eat the resources of my machine. I missed the renaming variable feature in gvim for some time now. Today this is over I was reading the manual of vim and found what I was looking for.</description>
+    </item>
+    
+  </channel>
+</rss>

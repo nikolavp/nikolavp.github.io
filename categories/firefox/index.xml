@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/firefox/</link>
+    <description>Recent content in firefox on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Sep 2009 16:08:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/firefox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing flash 64bit on Kubuntu jaunty</title>
+      <link>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</link>
+      <pubDate>Tue, 22 Sep 2009 16:08:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</guid>
+      <description>Maybe some of you know that kubuntu/ubuntu is providing 32 bit flash player and is using nspluginwrapper if you are using an 64 OS. Here the nspluginwrapper is making problems, it is making my machine unresponsible if I am watching 3 flash sites at the time and so on. I am also suspecting that it is the reason firefox crashes sometimes on some flash movies.
+So here is the workarround. On the official website of adobe there is no 64 option so we have to dig a little more.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jar on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/jar/</link>
+    <description>Recent content in jar on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Aug 2009 17:14:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/jar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reloading jars at Runtime</title>
+      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <description>I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class.</description>
+    </item>
+    
+  </channel>
+</rss>

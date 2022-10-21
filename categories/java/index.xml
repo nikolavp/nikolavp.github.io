@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/java/</link>
+    <description>Recent content in java on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Aug 2009 17:14:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reloading jars at Runtime</title>
+      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <description>I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class.</description>
+    </item>
+    
+    <item>
+      <title>Sparse matrix multiply dummy algorithm</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
+      <pubDate>Mon, 04 May 2009 20:44:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
+      <description>Today almost the half an hour I was trying to write that algorithm which multiplies two sparse matrix. At the end this is what I&amp;rsquo;ve got. The matrix is represented as a linkedlist of triples, because this is how they want it in our university. There were some mistakes in the code like Sparce is not with &amp;ldquo;s&amp;rdquo;, but those are pretty much syntax mistakes and i didn&amp;rsquo;t want to make changes for our teacher :).</description>
+    </item>
+    
+    <item>
+      <title>Eclipse for c&#43;&#43;</title>
+      <link>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
+      <pubDate>Thu, 14 Aug 2008 11:02:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
+      <description>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t trust garbage collectors</title>
+      <link>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</link>
+      <pubDate>Sun, 03 Aug 2008 07:22:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</guid>
+      <description>I recently read This blog post and the author has a nice point about garbage collectors. When we program in languages with that feature we should not blindly trust the automatic memory management for everything. Most of the time it is ok, but sometimes you have to think about memory management in those languages too. In the blog post Tahseen Ur Rehman gives an example with a thread which was holding some references to the objects so they could not be deleted, so the users were getting OutOfMemoryErrors.</description>
+    </item>
+    
+    <item>
+      <title>A little benchmark with C&#43;&#43; and Java in the game.</title>
+      <link>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</link>
+      <pubDate>Thu, 31 Jul 2008 20:59:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</guid>
+      <description>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because
+* They don&#39;t know it&#39;s size You cannot extend it if you reach the limit</description>
+    </item>
+    
+  </channel>
+</rss>

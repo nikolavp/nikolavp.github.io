@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sofia on Nikolavp&#39;s hacking</title>
+    <link>http://nikolavp.github.io/categories/sofia/</link>
+    <description>Recent content in sofia on Nikolavp&#39;s hacking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
+    <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
+    <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 04 May 2009 10:36:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/sofia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ScribeFire - my new blogger editor</title>
+      <link>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
+      <pubDate>Mon, 04 May 2009 10:36:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
+      <description>This is the first time i write from ScribeFire - my new choice for blog editor. I tried almost every client out there for Linux(since i am using kubuntu) and they were all buggy for me. For example
+I didn&amp;rsquo;t manage to configure kblogger-kde4 - the damn thing couldn&amp;rsquo;t find my posts and entries
+Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;rsquo;t find and after I installed it I got a ValueError in a property named &amp;ldquo;name&amp;rdquo; and I was too tired to look at the code.</description>
+    </item>
+    
+    <item>
+      <title>Openfest2008 part I</title>
+      <link>http://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</link>
+      <pubDate>Mon, 03 Nov 2008 14:50:00 +0000</pubDate>
+      <author>nikolavp@gmail.com (Nikola Petrov)</author>
+      <guid>http://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</guid>
+      <description>Yesterday I promised that I will be blogging about OpenFest2008, because I was too tired back then.
+All in all the event was pretty nice organized, there were free drinks like beer(I enjoyed it many times :P ), coffee, tea. I really liked some of the lectures like the one about scalability from yesterday. The lecture about wordpress was nice and I learned many things from it like what is available when you are building a site with that size and what are the right decisions.</description>
+    </item>
+    
+  </channel>
+</rss>
