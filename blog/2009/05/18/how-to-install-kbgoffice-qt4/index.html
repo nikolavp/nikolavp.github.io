@@ -1,195 +1,195 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html lang="en-us">
   <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>How to install kbgoffice qt4 | Nikolavp&#39;s hacking</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:
+build-essential
+qt4-dev-tools
+cmake
+subversion(to get the source)">
+    <meta name="generator" content="Hugo 0.104.3" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
+    
+<link rel="stylesheet" href="http://nikolavp.github.io/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="How to install kbgoffice qt4" />
+<meta property="og:description" content="I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:
+build-essential
+qt4-dev-tools
+cmake
+subversion(to get the source)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2009-05-18T10:17:00+00:00" />
+<meta property="article:modified_time" content="2009-05-18T10:17:00+00:00" /><meta property="og:site_name" content="Nikolavp&#39;s hacking" />
+
+<meta itemprop="name" content="How to install kbgoffice qt4">
+<meta itemprop="description" content="I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:
+build-essential
+qt4-dev-tools
+cmake
+subversion(to get the source)"><meta itemprop="datePublished" content="2009-05-18T10:17:00+00:00" />
+<meta itemprop="dateModified" content="2009-05-18T10:17:00+00:00" />
+<meta itemprop="wordCount" content="193">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to install kbgoffice qt4"/>
+<meta name="twitter:description" content="I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:
+build-essential
+qt4-dev-tools
+cmake
+subversion(to get the source)"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    
-      How to install kbgoffice qt4 &middot; Nikolavp&#39;s hacking
-    
-  </title>
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://nikolavp.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Nikolavp&#39;s hacking
+      
+    </a>
+    <div class="flex-l items-center">
+      
 
+      
+      
+<div class="ananke-socials">
   
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/poole.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/lanyon.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://nikolavp.github.io/assets/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://nikolavp.github.io/assets/favicon.ico">
-
-  
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/atom.xml">
-</head>
-
-
-  <body>
-
-    
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-      <p></p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
-
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </nav>
-
-  <div class="sidebar-item">
-    <p>&copy; 2012. All rights reserved.</p>
-  </div>
 </div>
 
+    </div>
+  </div>
+</nav>
 
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
     
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="http://nikolavp.github.io/" title="Home">Nikolavp&#39;s hacking</a>
-            <small></small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
+  </div>
 
 
-<div class="post">
-  <h1 class="post-title">How to install kbgoffice qt4</h1>
-  <span class="post-date">May 18 2009</span>
-  <p>I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:</p>
+      <h1 class="f1 athelas mt3 mb1">How to install kbgoffice qt4</h1>
+      
+      <p class="tracked">
+        By <strong>nikolavp</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2009-05-18T10:17:00Z">May 18, 2009</time>
+      
 
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:</p>
 <ol>
-<li><p>build-essential</p></li>
-
-<li><p>qt4-dev-tools</p></li>
-
-<li><p>cmake</p></li>
-
-<li><p>subversion(to get the source)</p></li>
+<li>
+<p>build-essential</p>
+</li>
+<li>
+<p>qt4-dev-tools</p>
+</li>
+<li>
+<p>cmake</p>
+</li>
+<li>
+<p>subversion(to get the source)</p>
+</li>
 </ol>
-
 <p>You can get all that with a simple command <strong>_sudo aptitude install build-essential qt4-dev-tools cmake subversion _</strong>. After satisfying all the dependencies you need to get the source code with
 <strong><em>svn co <a href="http://svn.assembla.com/svn/kbgoffice/trunk">http://svn.assembla.com/svn/kbgoffice/trunk</a> kbgoffice</em></strong>
 go to the kbgoffice directory, create a new build directory, compile
 <em><strong>cd kbgoffice;mkdir build;cd build;cmake ../;make</strong></em>
 and if you wаnt to install the program
 <em><strong>sudo make install</strong></em>
-Then to startup the program just type kbgoffice in the konsole or the terminal client you are using <Alt+F2> works fine too. Have fun :D.</p>
-
+Then to startup the program just type kbgoffice in the konsole or the terminal client you are using &lt;Alt+F2&gt; works fine too. Have fun :D.</p>
 <p>I didn&rsquo;t find how to make an uninstall rule so there is no make uninstall option for now. To delete the files installed, just delete the /usr/local/share/bgoffice directory and the /usr/local/bin/kbgoffice executable file :).</p>
-
-<p><img src="http://img.zemanta.com/pixy.gif?x-id=55b39261-a999-82b1-8b34-c3842a30fc88" alt="" /></p>
-
-</div>
-
+<p><img src="http://img.zemanta.com/pixy.gif?x-id=55b39261-a999-82b1-8b34-c3842a30fc88" alt=""></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <aside class="w-30-l mt6-l">
 
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://nikolavp.github.io/" >
+    &copy;  Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved. 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
   </body>
 </html>
-

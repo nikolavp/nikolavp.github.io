@@ -1,219 +1,194 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html lang="en-us">
   <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Using SSH without password | Nikolavp&#39;s hacking</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:
+ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons:">
+    <meta name="generator" content="Hugo 0.104.3" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
+    
+<link rel="stylesheet" href="http://nikolavp.github.io/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Using SSH without password" />
+<meta property="og:description" content="The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:
+ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-07-28T20:16:25+00:00" />
+<meta property="article:modified_time" content="2012-07-28T20:16:25+00:00" /><meta property="og:site_name" content="Nikolavp&#39;s hacking" />
+
+<meta itemprop="name" content="Using SSH without password">
+<meta itemprop="description" content="The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:
+ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons:"><meta itemprop="datePublished" content="2012-07-28T20:16:25+00:00" />
+<meta itemprop="dateModified" content="2012-07-28T20:16:25+00:00" />
+<meta itemprop="wordCount" content="423">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using SSH without password"/>
+<meta name="twitter:description" content="The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:
+ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons:"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    
-      Using SSH without password &middot; Nikolavp&#39;s hacking
-    
-  </title>
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://nikolavp.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Nikolavp&#39;s hacking
+      
+    </a>
+    <div class="flex-l items-center">
+      
 
+      
+      
+<div class="ananke-socials">
   
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/poole.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/lanyon.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://nikolavp.github.io/assets/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://nikolavp.github.io/assets/favicon.ico">
-
-  
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/atom.xml">
-</head>
-
-
-  <body>
-
-    
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-      <p></p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
-
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </nav>
-
-  <div class="sidebar-item">
-    <p>&copy; 2012. All rights reserved.</p>
-  </div>
 </div>
 
+    </div>
+  </div>
+</nav>
 
-    
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="http://nikolavp.github.io/" title="Home">Nikolavp&#39;s hacking</a>
-            <small></small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
+    </div>
+  </header>
 
 
-<div class="post">
-  <h1 class="post-title">Using SSH without password</h1>
-  <span class="post-date">Jul 28 2012</span>
+
+    <main class="pb7" role="main">
+      
   
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
 
-<h1 id="the-problem:b5b8f7c735d5199a55cec0fbd9235a49">The problem</h1>
 
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Using SSH without password</h1>
+      
+      <p class="tracked">
+        By <strong>nikolavp</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-07-28T20:16:25Z">July 28, 2012</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="the-problem">The problem</h1>
 <p>Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:</p>
-
 <pre><code>ssh 73.32.32.22 -l nikolavp
 </code></pre>
-
 <p>and then when prompt for password, enter it. <strong>scp</strong>, <strong>rsync</strong> and friends will require almost the same amount of work.
 This is bad for the following reasons:</p>
-
 <ul>
-<li><p>It requires you to know the IP address or the DNS name whatsoever instead of doing an alias for yourself</p></li>
-
-<li><p>You will have to remember the username for that host</p></li>
-
-<li><p>You will have to remember the password for that host</p></li>
-
-<li><p>You will have to break your fingers to type that over and over again</p></li>
+<li>
+<p>It requires you to know the IP address or the DNS name whatsoever instead of doing an alias for yourself</p>
+</li>
+<li>
+<p>You will have to remember the username for that host</p>
+</li>
+<li>
+<p>You will have to remember the password for that host</p>
+</li>
+<li>
+<p>You will have to break your fingers to type that over and over again</p>
+</li>
 </ul>
-
 <p>Well if you are like me you most probably don&rsquo;t want to type all that much just do your work. Here I will provide a setup that will save your world :)</p>
-
-<h2 id="create-an-alias-for-the-host:b5b8f7c735d5199a55cec0fbd9235a49">Create an alias for the host</h2>
-
+<h2 id="create-an-alias-for-the-host">Create an alias for the host</h2>
 <p>SSH provides a convenient shortcuts for making internal aliases for the hosts. You can define a host alias for an IP address(or DNS resolvable name) and the username for that host. So to not use the password for our imaginary host from the example above, we have include the following in our <strong>~/.ssh/config</strong> file(create it if it doesn&rsquo;t exist)</p>
-
 <pre><code>Host=foo
 Hostname=72.32.32.22
 User=nikolavp
 </code></pre>
-
-<h2 id="create-a-ssh-key:b5b8f7c735d5199a55cec0fbd9235a49">Create a ssh key</h2>
-
+<h2 id="create-a-ssh-key">Create a ssh key</h2>
 <p>You should forget about your password as authenticating method, it is far safer to use a key for that and some sort of cryptography like RSA. You can follow some guide from the internet on how to do that exactly. For example <a href="http://www.linuxproblem.org/art_9.html">this one</a> seems pretty simple and straightforward. Except that there is a far better command now for the last two steps - its called <strong>ssh-copy-id</strong>. You can man it if you want to know what it does.</p>
-
-<h2 id="setting-up-a-keymanager:b5b8f7c735d5199a55cec0fbd9235a49">Setting up a keymanager</h2>
-
+<h2 id="setting-up-a-keymanager">Setting up a keymanager</h2>
 <p>To be able to unlock your key once on every session start you should be using a key manager. Likely most of the big desktop environments have done this for you - gnome has gnome-keyring and kde has the kde-wallet. On other more primitive environments you will be on your own. You can look at the guide from Archlinux for more information <a href="https://wiki.archlinux.org/index.php/SSH_Keys#ssh-agent">here</a>.</p>
-
-<h1 id="final-thoughts:b5b8f7c735d5199a55cec0fbd9235a49">Final thoughts</h1>
-
+<h1 id="final-thoughts">Final thoughts</h1>
 <p>After following the steps from this simple and short guide you should be able to log into your servers without any password with just it&rsquo;s alias. For our host from the example, I will just have to write</p>
-
 <pre><code>ssh foo
 </code></pre>
-
-</div>
-
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <aside class="w-30-l mt6-l">
 
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://nikolavp.github.io/" >
+    &copy;  Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved. 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
   </body>
 </html>
-

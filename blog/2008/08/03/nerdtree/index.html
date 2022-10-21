@@ -1,196 +1,186 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html lang="en-us">
   <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>NERDTree | Nikolavp&#39;s hacking</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+* It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
+I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete.">
+    <meta name="generator" content="Hugo 0.104.3" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
+    
+<link rel="stylesheet" href="http://nikolavp.github.io/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="NERDTree" />
+<meta property="og:description" content="Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+* It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
+I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nikolavp.github.io/blog/2008/08/03/nerdtree/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2008-08-03T21:27:00+00:00" />
+<meta property="article:modified_time" content="2008-08-03T21:27:00+00:00" /><meta property="og:site_name" content="Nikolavp&#39;s hacking" />
+
+<meta itemprop="name" content="NERDTree">
+<meta itemprop="description" content="Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+* It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
+I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete."><meta itemprop="datePublished" content="2008-08-03T21:27:00+00:00" />
+<meta itemprop="dateModified" content="2008-08-03T21:27:00+00:00" />
+<meta itemprop="wordCount" content="200">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NERDTree"/>
+<meta name="twitter:description" content="Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
+* It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
+I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
+There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    
-      NERDTree &middot; Nikolavp&#39;s hacking
-    
-  </title>
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://nikolavp.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Nikolavp&#39;s hacking
+      
+    </a>
+    <div class="flex-l items-center">
+      
 
+      
+      
+<div class="ananke-socials">
   
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/poole.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://nikolavp.github.io/css/lanyon.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://nikolavp.github.io/assets/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://nikolavp.github.io/assets/favicon.ico">
-
-  
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nikolavp.github.io/atom.xml">
-</head>
-
-
-  <body>
-
-    
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-      <p></p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/">Home</a>
-    <a class="sidebar-nav-item " href="http://nikolavp.github.io/post">Posts</a>
-
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </nav>
-
-  <div class="sidebar-item">
-    <p>&copy; 2012. All rights reserved.</p>
-  </div>
 </div>
 
+    </div>
+  </div>
+</nav>
 
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
     
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="http://nikolavp.github.io/" title="Home">Nikolavp&#39;s hacking</a>
-            <small></small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
+  </div>
 
 
-<div class="post">
-  <h1 class="post-title">NERDTree</h1>
-  <span class="post-date">Aug 3 2008</span>
-  <p>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.</p>
+      <h1 class="f1 athelas mt3 mb1">NERDTree</h1>
+      
+      <p class="tracked">
+        By <strong>nikolavp</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-08-03T21:27:00Z">August 3, 2008</time>
+      
 
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.</p>
 <pre><code>* It had to be plugable to the UI and not clutter it
 </code></pre>
-
 <ul>
-<li><p>It had to <strong>list</strong> the files in a directories of my project</p></li>
-
-<li><p>I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab</p></li>
+<li>
+<p>It had to <strong>list</strong> the files in a directories of my project</p>
+</li>
+<li>
+<p>I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab</p>
+</li>
 </ul>
-
 <p>There are many plugins out there that solve some of the problems/requirements in the list, but they were not complete. I have tried project(this one was good), the built in explorer, some other explorers, which names i cannot remember :D.</p>
-
 <p>Enter <a href="http://www.vim.org/scripts/script.php?script_id=1658">NERDTree</a>. That is one of the plugins that saves your day. I just put</p>
-
 <pre><code>map &lt;F6&gt; :NERDTreeToggle
 </code></pre>
-
-<p>in my vimrc and now when i hit F6 i have a list of the files in my home directory. I go to that window with either the mouse or <C-W> w and now i can use the neat features of the plugin.</p>
-
+<p>in my vimrc and now when i hit F6 i have a list of the files in my home directory. I go to that window with either the mouse or <!-- raw HTML omitted --> w and now i can use the neat features of the plugin.</p>
 <pre><code>? - get helpC - make the directory your ROOTo - open/close the directory(this shows the files also in the     directory as a list
 </code></pre>
-
 <p>When you finish don&rsquo;t forget to hit F6 again :D</p>
-
-</div>
-
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <aside class="w-30-l mt6-l">
 
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://nikolavp.github.io/" >
+    &copy;  Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved. 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
   </body>
 </html>
-
