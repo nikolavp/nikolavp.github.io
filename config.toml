@@ -1,4 +1,4 @@
-baseurl = "http://nikolavp.github.io/"
+baseurl = "https://nikolavp.github.io/"
 languageCode = "en-us"
 title = "Nikolavp's hacking"
 pygmentsuseclasses = false
@@ -7,6 +7,7 @@ pygmentsuseclasses = false
 copyright = "Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved."
 canonifyurls = true
 paginate = 3
+theme = "ananke"
 
 [permalinks]
     post = "/blog/:year/:month/:day/:title/"
@@ -21,7 +22,6 @@ category = "categories"
 [indexes]
 tag = "tags"
 #topic = "topics"
-
 
 [params]
 # Properties for the lanyon theme
