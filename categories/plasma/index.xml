@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>plasma on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/plasma/</link>
+    <link>https://nikolavp.github.io/categories/plasma/</link>
     <description>Recent content in plasma on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 23 Sep 2008 16:28:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/plasma/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Sep 2008 16:28:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/plasma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nice plasma shortcut</title>
-      <link>http://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</link>
       <pubDate>Tue, 23 Sep 2008 16:28:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</guid>
       <description>Today while i was looking at kdevelop4 to see the new stuff i clicked accidentally and plasma showed up in front of me. I am using this shortcut more and more and it is really a huge fun. For example to see what&amp;rsquo;s the time or notes on the Desktop. The new folder view also :). The little things made the difference once more :)</description>
     </item>
     

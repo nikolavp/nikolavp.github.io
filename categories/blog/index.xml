@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/blog/</link>
+    <link>https://nikolavp.github.io/categories/blog/</link>
     <description>Recent content in blog on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 19 Feb 2012 09:32:57 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2012 09:32:57 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Moved from blogger to wordpress</title>
-      <link>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</link>
+      <link>https://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</link>
       <pubDate>Sun, 19 Feb 2012 09:32:57 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</guid>
       <description>The why You are currently reading this post on my new blog, built on top of Wordpress and OpenShift. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons:
 small screen/content width - this was the main reason that made me move. The width of the box content is so small that it&amp;rsquo;s really hard to post a snippet of code.</description>
     </item>

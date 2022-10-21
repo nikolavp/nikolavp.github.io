@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IRC on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/irc/</link>
+    <link>https://nikolavp.github.io/categories/irc/</link>
     <description>Recent content in IRC on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 Sep 2008 16:40:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/irc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Sep 2008 16:40:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/irc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43; can have nasty syntax sometimes</title>
-      <link>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
       <pubDate>Mon, 01 Sep 2008 16:40:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
       <description>Hmm today on IRC in the channel ##C++ @ Freenode someone posted the following code
 /*In g++ this does not work*/ template struct hello { hello(){}; ~hello(){}; template int world() { return _b+_a; } }; template void try_hello() { hello h; h.world(); }
 so i tried to help the person telling him that he should use a typename before h.world(); because it can ambitious for the compiler. It turns out that the right solution was</description>

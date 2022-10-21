@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fmi on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/fmi/</link>
+    <link>https://nikolavp.github.io/categories/fmi/</link>
     <description>Recent content in fmi on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 02 Nov 2008 21:47:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/fmi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Nov 2008 21:47:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/fmi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Late in the evening</title>
-      <link>http://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</link>
+      <link>https://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</link>
       <pubDate>Sun, 02 Nov 2008 21:47:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</guid>
       <description>It&amp;rsquo;s pretty late here. I just entered my room, because I was at the OpenFest today and after that I met some friends. Look forward to read about the OpenFest tomorrow, because I am too tired to write the whole story and I actually don&amp;rsquo;t have the time. Tomorrow there are lectures in FMI and Diskrete Math is too important to be missed.</description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>script on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/script/</link>
+    <link>https://nikolavp.github.io/categories/script/</link>
     <description>Recent content in script on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Aug 2008 21:23:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/script/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Aug 2008 21:23:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/script/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nopaste.vim update</title>
-      <link>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
       <pubDate>Tue, 05 Aug 2008 21:23:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
       <description>Today i posted an improved version of nopaste in the scripts database at vim.org You can find the script here. It will help you paste code/text in rafb.net/paste to use it on IRC or some other chat programs. For me it was really useful so i made it public.</description>
     </item>
     

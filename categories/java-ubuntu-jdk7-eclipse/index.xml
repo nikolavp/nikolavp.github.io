@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java ubuntu jdk7 eclipse on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/java-ubuntu-jdk7-eclipse/</link>
+    <link>https://nikolavp.github.io/categories/java-ubuntu-jdk7-eclipse/</link>
     <description>Recent content in java ubuntu jdk7 eclipse on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 22 May 2010 12:19:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/java-ubuntu-jdk7-eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 May 2010 12:19:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/java-ubuntu-jdk7-eclipse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing jdk7 in Ubuntu</title>
-      <link>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</link>
+      <link>https://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</link>
       <pubDate>Sat, 22 May 2010 12:19:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</guid>
+      <guid>https://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</guid>
       <description>Today i wanted to try the new version of jdk and see how is the project going. Last time i checked it was too buggy to setup so i was a bit of disappointed. As I using ubuntu on my laptop i wanted to check if my distro is providing a development package for the new vm but that wasn&amp;rsquo;t the case :(. Luckily the jdk project provides some nice prepackaged binaries you can install yourself over here.</description>
     </item>
     

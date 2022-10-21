@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vim on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/vim/</link>
+    <link>https://nikolavp.github.io/categories/vim/</link>
     <description>Recent content in vim on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 Aug 2008 13:06:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Aug 2008 13:06:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supress some warning in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
       <pubDate>Wed, 13 Aug 2008 13:06:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
       <description>Maybe you know that vim parses the output from the compiler so it can jump to the right line which cause the error(:h quickfix for more info). Well it seems that the default compiler options parse even warning which are sometimes pretty annoying. There were some warning for depracated conversion from the compiler because of xmp files. Well i am sure that i don&amp;rsquo;t want to see those. So here is what i have in my ~/.</description>
     </item>
     
     <item>
       <title>Nopaste.vim update</title>
-      <link>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
       <pubDate>Tue, 05 Aug 2008 21:23:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
       <description>Today i posted an improved version of nopaste in the scripts database at vim.org You can find the script here. It will help you paste code/text in rafb.net/paste to use it on IRC or some other chat programs. For me it was really useful so i made it public.</description>
     </item>
     
     <item>
       <title>Problem with file endings</title>
-      <link>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</link>
       <pubDate>Mon, 04 Aug 2008 15:40:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</guid>
       <description>Today I had the same problem with mixed file endings. It seems that many editors are still dealing bad with that on different platforms, so you get different line endings. This times instead of manually dealing with the problem I googled and it seems that there is a nice workaround, you just need to type
 :%s/\r// and you are done. This will take care of you, I also have ff=unix in most of my files and in my vimrc.</description>
     </item>
     
     <item>
       <title>NERDTree</title>
-      <link>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/03/nerdtree/</link>
       <pubDate>Sun, 03 Aug 2008 21:27:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/03/nerdtree/</guid>
       <description>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
 * It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
 I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
@@ -52,40 +52,40 @@ There are many plugins out there that solve some of the problems/requirements in
     
     <item>
       <title>Nice way to keep the lines indented in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</link>
       <pubDate>Fri, 25 Jul 2008 21:59:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</guid>
       <description>Here is one more vim tipp. I just put a new keybinding to my .vimrc file, thanks to \amethyst from #vim@freenode.net :). Here it is
 inoremap &amp;lt;expr&amp;gt; &amp;lt;CR&amp;gt; (col(&amp;quot;$&amp;quot;)==col(&amp;quot;.&amp;quot;) ? &amp;quot;\&amp;lt;ESC&amp;gt;=a{\&amp;lt;C-O&amp;gt;o&amp;quot; : &amp;quot;\&amp;lt;CR&amp;gt;&amp;quot;) This will indent the whole block before the line if you hit on the end of the code you are writing in insert mode. If you are not at the end of the line you will get the default behaviour of .</description>
     </item>
     
     <item>
       <title>Highlight for Qt classes in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
       <pubDate>Wed, 23 Jul 2008 19:04:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
       <description>Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my ~/.vim/syntax/cpp.vim. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&amp;rsquo;s web site ;).
 UPDATE: Today Vidas Katinas send me the modified version so i have updated the link.</description>
     </item>
     
     <item>
       <title>Making abbreviations persistent in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</link>
       <pubDate>Wed, 23 Jul 2008 10:47:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</guid>
       <description>If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type
 :iabbrev wrongstring wantedstring in command mode and the next time you type the word wrong vim will fix it. So where is the problem? The problem is that when you type that in command mode it is not persistent between sessions.</description>
     </item>
     
     <item>
       <title>Renaming a variable in gvim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</link>
       <pubDate>Mon, 21 Jul 2008 18:49:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</guid>
       <description>Some of you may be missing the nice IDE&amp;rsquo;s and their neat features when you are editing in gvim. I was myself a long time Eclipse user, but I found that it doesn&amp;rsquo;t make me more productive, but just eat the resources of my machine. I missed the renaming variable feature in gvim for some time now. Today this is over I was reading the manual of vim and found what I was looking for.</description>
     </item>
     

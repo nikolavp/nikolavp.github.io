@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/</link>
+    <link>https://nikolavp.github.io/</link>
     <description>Recent content on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pattern matching or sort of in python</title>
-      <link>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
+      <link>https://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
       <pubDate>Wed, 29 Aug 2012 15:18:05 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
       <description>I must admit that pattern matching is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&amp;rsquo;t until late that I found about new languages on the JVM that support the same idiom.
 For this to work properly - the language should know how to &amp;ldquo;destruct&amp;rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable.</description>
     </item>
     
     <item>
       <title>Implement properties in C plus plus</title>
-      <link>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</link>
+      <link>https://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</link>
       <pubDate>Sat, 28 Jul 2012 20:23:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/07/28/implement-properties-in-c-plus-plus/</guid>
       <description>Here is some tricky code in C++ that I was watching recently and decided to post here for future references. Sometime the usage of operator overloading in C++ amuses me so much. Apperently there is a way to implement properties that look the same as normal properties and behave almost the same. The only problem as always is that when you get a compile time error - the messages are pretty confusing if you don&amp;rsquo;t know what&amp;rsquo;s going on.</description>
     </item>
     
     <item>
       <title>Using SSH without password</title>
-      <link>http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</link>
+      <link>https://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</link>
       <pubDate>Sat, 28 Jul 2012 20:16:25 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/07/28/using-ssh-without-password/</guid>
       <description>The problem Ok so you are using Linux or other Unix(Solaris, *BSD) favors to deploy your systems. If so you are most probably using ssh to log in on those servers. So to login to some external machine you will have to type something like this:
 ssh 73.32.32.22 -l nikolavp and then when prompt for password, enter it. scp, rsync and friends will require almost the same amount of work. This is bad for the following reasons:</description>
     </item>
     
     <item>
       <title>Another Skype instance may exist</title>
-      <link>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</link>
+      <link>https://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</link>
       <pubDate>Wed, 14 Mar 2012 08:27:12 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/03/14/another-skype-instance-may-exist/</guid>
       <description>Today I got this error message from skype in Linux while I was trying to login. After many attempts to get rid of the message by restarting skype, I finally googled the message and found out that there are two .lck files that need to be deleted. But after trying it and restarting it again, this didn&amp;rsquo;t solve it. If you happen to be one of those unlucky &amp;ldquo;souls&amp;rdquo;. Do the following:</description>
     </item>
     
     <item>
       <title>Moved from blogger to wordpress</title>
-      <link>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</link>
+      <link>https://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</link>
       <pubDate>Sun, 19 Feb 2012 09:32:57 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/02/19/moved-from-blogger-to-wordpress/</guid>
       <description>The why You are currently reading this post on my new blog, built on top of Wordpress and OpenShift. My blog was on the blogger platform in the past, but i finally decided to move from there for the following reasons:
 small screen/content width - this was the main reason that made me move. The width of the box content is so small that it&amp;rsquo;s really hard to post a snippet of code.</description>
     </item>
     
     <item>
       <title>Moved from Ubuntu to Arch</title>
-      <link>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</link>
+      <link>https://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</link>
       <pubDate>Wed, 28 Sep 2011 11:46:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</guid>
+      <guid>https://nikolavp.github.io/blog/2011/09/28/moved-from-ubuntu-to-arch/</guid>
       <description>Intro
 After 3 years with Ubuntu on my laptop HP 6730s, I finally decided to switch to something faster and more reliable(I will talk about this some more)
 Some history: I was an old Gentoo user before and I was using it on my desktop machine. After I got my laptop though I knew that Gentoo is not so suitable for laptops(the compilation is killing them) so Ubuntu seemed like a nice choice.</description>
@@ -71,48 +71,48 @@ Some history: I was an old Gentoo user before and I was using it on my desktop m
     
     <item>
       <title>Installing jdk7 in Ubuntu</title>
-      <link>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</link>
+      <link>https://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</link>
       <pubDate>Sat, 22 May 2010 12:19:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</guid>
+      <guid>https://nikolavp.github.io/blog/2010/05/22/installing-jdk7-in-ubuntu/</guid>
       <description>Today i wanted to try the new version of jdk and see how is the project going. Last time i checked it was too buggy to setup so i was a bit of disappointed. As I using ubuntu on my laptop i wanted to check if my distro is providing a development package for the new vm but that wasn&amp;rsquo;t the case :(. Luckily the jdk project provides some nice prepackaged binaries you can install yourself over here.</description>
     </item>
     
     <item>
       <title>Installing flash 64bit on Kubuntu jaunty</title>
-      <link>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</link>
+      <link>https://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</link>
       <pubDate>Tue, 22 Sep 2009 16:08:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/09/22/installing-flash-64bit-on-kubuntu-jaunty/</guid>
       <description>Maybe some of you know that kubuntu/ubuntu is providing 32 bit flash player and is using nspluginwrapper if you are using an 64 OS. Here the nspluginwrapper is making problems, it is making my machine unresponsible if I am watching 3 flash sites at the time and so on. I am also suspecting that it is the reason firefox crashes sometimes on some flash movies.
 So here is the workarround. On the official website of adobe there is no 64 option so we have to dig a little more.</description>
     </item>
     
     <item>
       <title>Did you know movie and Kevin Kelly&#39;s web 3.0</title>
-      <link>http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</link>
+      <link>https://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</link>
       <pubDate>Sat, 29 Aug 2009 20:13:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/08/29/did-you-know-movie-and-kevin-kellys-web-3.0/</guid>
       <description>Have you already used twine, if not check it out. It is like a social bookmarking system and i am using it lately extensively for getting the latest information about the semantic technologies and the next generation web 3.0. After using it for about a week or two it starts to &amp;ldquo;know you&amp;rdquo; and recommend useful information based on your interest.
 For example today i got this video with &amp;ldquo;Did you know&amp;rdquo; stuff which is mostly mentioning things about the internet but there are some nice facts about the population in USA, India.</description>
     </item>
     
     <item>
       <title>Reloading jars at Runtime</title>
-      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <link>https://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
       <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
       <description>I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class.</description>
     </item>
     
     <item>
       <title>How to install kbgoffice qt4</title>
-      <link>http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</link>
+      <link>https://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</link>
       <pubDate>Mon, 18 May 2009 10:17:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/05/18/how-to-install-kbgoffice-qt4/</guid>
       <description>I finally had the time to play a little bit with the build system of kbgoffice and the qt4 port i forked a year ago. Now the program can be installed with a simple make install rule from the build directory. To be able to compile it you will need a compiler, the qt4 header files and development tools. For example on my kubuntu it needs:
 build-essential
 qt4-dev-tools
@@ -122,28 +122,28 @@ subversion(to get the source)</description>
     
     <item>
       <title>Installing ati drivers for HP Compaq 6730s</title>
-      <link>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</link>
+      <link>https://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</link>
       <pubDate>Thu, 07 May 2009 21:00:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/05/07/installing-ati-drivers-for-hp-compaq-6730s/</guid>
       <description>I have a new laptop HP Compaq 6730s. It seems that the drivers from the official kubuntu repository are not working :(. After I installed xorg-driver-fglrx and wanted to restart X - it locked. So I had to revert the xorg.conf from safe mode. Today I had the time and tried again with the official binaries from ATI and for now they seem to work really well. I enjoy the desktop effects from time to time and I can finally watch video with a mode different from sdl :).</description>
     </item>
     
     <item>
       <title>Sparse matrix multiply dummy algorithm</title>
-      <link>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
+      <link>https://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</link>
       <pubDate>Mon, 04 May 2009 20:44:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/05/04/sparse-matrix-multiply-dummy-algorithm/</guid>
       <description>Today almost the half an hour I was trying to write that algorithm which multiplies two sparse matrix. At the end this is what I&amp;rsquo;ve got. The matrix is represented as a linkedlist of triples, because this is how they want it in our university. There were some mistakes in the code like Sparce is not with &amp;ldquo;s&amp;rdquo;, but those are pretty much syntax mistakes and i didn&amp;rsquo;t want to make changes for our teacher :).</description>
     </item>
     
     <item>
       <title>ScribeFire - my new blogger editor</title>
-      <link>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
+      <link>https://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
       <pubDate>Mon, 04 May 2009 10:36:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
       <description>This is the first time i write from ScribeFire - my new choice for blog editor. I tried almost every client out there for Linux(since i am using kubuntu) and they were all buggy for me. For example
 I didn&amp;rsquo;t manage to configure kblogger-kde4 - the damn thing couldn&amp;rsquo;t find my posts and entries
 Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;rsquo;t find and after I installed it I got a ValueError in a property named &amp;ldquo;name&amp;rdquo; and I was too tired to look at the code.</description>
@@ -151,10 +151,10 @@ Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;
     
     <item>
       <title>Vrapper - a new way to develop inside Eclipse</title>
-      <link>http://nikolavp.github.io/blog/2009/04/21/vrapper-a-new-way-to-develop-inside-eclipse/</link>
+      <link>https://nikolavp.github.io/blog/2009/04/21/vrapper-a-new-way-to-develop-inside-eclipse/</link>
       <pubDate>Tue, 21 Apr 2009 08:38:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/04/21/vrapper-a-new-way-to-develop-inside-eclipse/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/04/21/vrapper-a-new-way-to-develop-inside-eclipse/</guid>
       <description>Yesterday while I was again searching for nice tools and plugins for eclipse which is what I use for my day to day programming now, I found that there is a new project that want to provide vim like input scheme in eclipse. I was pretty skeptical at first because I have already tried
 Eclim
 Vimplugin
@@ -163,74 +163,74 @@ and wasn&amp;rsquo;t happy from the results at all. Eclim is not bad in the last
     
     <item>
       <title>Openfest2008 part I</title>
-      <link>http://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</link>
+      <link>https://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</link>
       <pubDate>Mon, 03 Nov 2008 14:50:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/11/03/openfest2008-part-i/</guid>
       <description>Yesterday I promised that I will be blogging about OpenFest2008, because I was too tired back then.
 All in all the event was pretty nice organized, there were free drinks like beer(I enjoyed it many times :P ), coffee, tea. I really liked some of the lectures like the one about scalability from yesterday. The lecture about wordpress was nice and I learned many things from it like what is available when you are building a site with that size and what are the right decisions.</description>
     </item>
     
     <item>
       <title>Late in the evening</title>
-      <link>http://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</link>
+      <link>https://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</link>
       <pubDate>Sun, 02 Nov 2008 21:47:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/11/02/late-in-the-evening/</guid>
       <description>It&amp;rsquo;s pretty late here. I just entered my room, because I was at the OpenFest today and after that I met some friends. Look forward to read about the OpenFest tomorrow, because I am too tired to write the whole story and I actually don&amp;rsquo;t have the time. Tomorrow there are lectures in FMI and Diskrete Math is too important to be missed.</description>
     </item>
     
     <item>
       <title>Openfest2008</title>
-      <link>http://nikolavp.github.io/blog/2008/10/27/openfest2008/</link>
+      <link>https://nikolavp.github.io/blog/2008/10/27/openfest2008/</link>
       <pubDate>Mon, 27 Oct 2008 19:53:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/10/27/openfest2008/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/10/27/openfest2008/</guid>
       <description>From last week i finally have internet here in Sofia and things are becoming much better. This year there will be again an Openfest here in Bulgaria. I hope, that I won&amp;rsquo;t miss it this time. Last year I couldn&amp;rsquo;t visit the fest and there weren&amp;rsquo;t any uploaded videos out there in the net. I can see that the site is now updated so i will watch the uploaded videos when i have time.</description>
     </item>
     
     <item>
       <title>I am now a student :)</title>
-      <link>http://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</link>
+      <link>https://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</link>
       <pubDate>Fri, 10 Oct 2008 19:52:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</guid>
       <description>Sorry that I haven&amp;rsquo;t been writing lately but I am now living in Student city and there a don&amp;rsquo;t have a computer with Internet connection. I will bring my laptop maybe this week so I will finally have one. The first week was not so bad - I had lectures on Algebra and Discrete mathematics. All in all I think that I will be &amp;ldquo;OK&amp;rdquo; with those, but we will see what the time will show.</description>
     </item>
     
     <item>
       <title>The speech of Steeve Jobs</title>
-      <link>http://nikolavp.github.io/blog/2008/09/24/the-speech-of-steeve-jobs/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/24/the-speech-of-steeve-jobs/</link>
       <pubDate>Wed, 24 Sep 2008 12:50:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/24/the-speech-of-steeve-jobs/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/24/the-speech-of-steeve-jobs/</guid>
       <description>This speech is a must see. You can find it here - the link is with BG subtitles, but i am sure that if you search in google you can find the original version or translated to your language. The speech is too good to be explained in a comment, so I will just leave the link. I knew some of the things, but his thinking is really nice and I hardly recommend the video :).</description>
     </item>
     
     <item>
       <title>Nice plasma shortcut</title>
-      <link>http://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</link>
       <pubDate>Tue, 23 Sep 2008 16:28:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/23/nice-plasma-shortcut/</guid>
       <description>Today while i was looking at kdevelop4 to see the new stuff i clicked accidentally and plasma showed up in front of me. I am using this shortcut more and more and it is really a huge fun. For example to see what&amp;rsquo;s the time or notes on the Desktop. The new folder view also :). The little things made the difference once more :)</description>
     </item>
     
     <item>
       <title>Trac and Eclipse</title>
-      <link>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</link>
       <pubDate>Thu, 18 Sep 2008 10:03:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/18/trac-and-eclipse/</guid>
       <description>Yesterday I wanted to integrate Trac tasks from the kbgoffice task list in my IDE. I was sure that eclipse should have that feature so I search in google and found that indeed there is a connector for Trac in mylyn-extras. Well i wanted to find an update site for that but it seems there isn&amp;rsquo;t any. So i downloaded the the extras version from the main download page and installed it locally.</description>
     </item>
     
     <item>
       <title>C&#43;&#43; can have nasty syntax sometimes</title>
-      <link>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
+      <link>https://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</link>
       <pubDate>Mon, 01 Sep 2008 16:40:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/09/01/c-can-have-nasty-syntax-sometimes/</guid>
       <description>Hmm today on IRC in the channel ##C++ @ Freenode someone posted the following code
 /*In g++ this does not work*/ template struct hello { hello(){}; ~hello(){}; template int world() { return _b+_a; } }; template void try_hello() { hello h; h.world(); }
 so i tried to help the person telling him that he should use a typename before h.world(); because it can ambitious for the compiler. It turns out that the right solution was</description>
@@ -238,101 +238,101 @@ so i tried to help the person telling him that he should use a typename before h
     
     <item>
       <title>Back from the vacation</title>
-      <link>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</link>
       <pubDate>Sat, 30 Aug 2008 09:46:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</guid>
       <description>Hmm yesterday i finally came back from the vacation in the mountain. I prefer it instead of the sea, because the sea is too dirty in the last years. As you maybe know i live in Bulgaria and it is near the Black sea which is pretty much aweful. Most of the time i was fishing swimming in a nice Pool near Ribarica. I also almost read Code complete second edition which is pretty old book but is still adequate for most of the tips.</description>
     </item>
     
     <item>
       <title>More kbgoffice fun</title>
-      <link>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
       <pubDate>Mon, 18 Aug 2008 12:34:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
       <description>Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).</description>
     </item>
     
     <item>
       <title>Eclipse for c&#43;&#43;</title>
-      <link>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</link>
       <pubDate>Thu, 14 Aug 2008 11:02:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/14/eclipse-for-c-/</guid>
       <description>Hmm lately I started using eclipse more and more. It seems they made it to not crash so much with the new release. I am pretty happy with it for C++ development it seems to own. I am not sure but i think that I am even more productive with it now than with vim. I have used the 3.2 version but it was full crap back then ;). Besides it is written in java it is worth looking in it.</description>
     </item>
     
     <item>
       <title>Supress some warning in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</link>
       <pubDate>Wed, 13 Aug 2008 13:06:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/13/supress-some-warning-in-vim/</guid>
       <description>Maybe you know that vim parses the output from the compiler so it can jump to the right line which cause the error(:h quickfix for more info). Well it seems that the default compiler options parse even warning which are sometimes pretty annoying. There were some warning for depracated conversion from the compiler because of xmp files. Well i am sure that i don&amp;rsquo;t want to see those. So here is what i have in my ~/.</description>
     </item>
     
     <item>
       <title>kbgoffice again working(sort of)</title>
-      <link>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</link>
       <pubDate>Tue, 12 Aug 2008 19:07:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/12/kbgoffice-again-workingsort-of/</guid>
       <description>The code for kbgoffice is working already on my machine. It is not really ported to Qt4, because right now it relays on the qt3support which will not be there and for good ;). There are also some annoying bugs(I will see where they came from, so keep calm :P). The instructions to compile the code(notice there is no target to install it for now) are in the INSTALL file. To get the code you will need subversion.</description>
     </item>
     
     <item>
       <title>kbgoffice fun</title>
-      <link>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</link>
       <pubDate>Mon, 11 Aug 2008 22:34:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/11/kbgoffice-fun/</guid>
       <description>Today at the Bulgarian linux forum someone asked to port the kbgoffice program to KDE4. I have used the damn thing pretty much so I decided to go for it. After 2 hours of fighting with compiler errors it finally compiled but most of the code is just commented out so I got a prototype&amp;hellip; I started to look at the classes this night and I see some bad code :(.</description>
     </item>
     
     <item>
       <title>The Aurora project.</title>
-      <link>http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</link>
+      <link>https://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</link>
       <pubDate>Sat, 09 Aug 2008 16:13:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</guid>
       <description>Maybe you&amp;rsquo;ve heard about the Aurora project from mozilla labs, well I wasn&amp;rsquo;t and I was impressed from the videos over here. It seems that maybe the Web will outperform the Desktop some day. I hope that it doesn&amp;rsquo;t happen so soon, because I really like the Desktop more and most of the applications I use today are Desktop based(mostly Qt/KDE).</description>
     </item>
     
     <item>
       <title>Book organizing over the internet</title>
-      <link>http://nikolavp.github.io/blog/2008/08/08/book-organizing-over-the-internet/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/08/book-organizing-over-the-internet/</link>
       <pubDate>Fri, 08 Aug 2008 07:47:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/08/book-organizing-over-the-internet/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/08/book-organizing-over-the-internet/</guid>
       <description>Hmm today I noticed that we at home have too many books. For example I want to read a novel and I am not sure if we have that or not and where it stays on those shelves and in bookcases. Enter books.google.com with My Library support. Now i only need to organize those a little :). Another nice open software for that is Tellico (yes I use KDE). I will have to choose one of them for the job.</description>
     </item>
     
     <item>
       <title>Nopaste.vim update</title>
-      <link>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</link>
       <pubDate>Tue, 05 Aug 2008 21:23:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/05/nopaste.vim-update/</guid>
       <description>Today i posted an improved version of nopaste in the scripts database at vim.org You can find the script here. It will help you paste code/text in rafb.net/paste to use it on IRC or some other chat programs. For me it was really useful so i made it public.</description>
     </item>
     
     <item>
       <title>Problem with file endings</title>
-      <link>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</link>
       <pubDate>Mon, 04 Aug 2008 15:40:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/04/problem-with-file-endings/</guid>
       <description>Today I had the same problem with mixed file endings. It seems that many editors are still dealing bad with that on different platforms, so you get different line endings. This times instead of manually dealing with the problem I googled and it seems that there is a nice workaround, you just need to type
 :%s/\r// and you are done. This will take care of you, I also have ff=unix in most of my files and in my vimrc.</description>
     </item>
     
     <item>
       <title>NERDTree</title>
-      <link>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/03/nerdtree/</link>
       <pubDate>Sun, 03 Aug 2008 21:27:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/03/nerdtree/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/03/nerdtree/</guid>
       <description>Hmm today i finally found a nice TreeExplorer for vim. I was looking for something like this for so long.
 * It had to be plugable to the UI and not clutter it It had to list the files in a directories of my project
 I wanted to be able to open the files from there to the right side of the window as antoher buffer/tab
@@ -341,77 +341,77 @@ There are many plugins out there that solve some of the problems/requirements in
     
     <item>
       <title>Don&#39;t trust garbage collectors</title>
-      <link>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</link>
       <pubDate>Sun, 03 Aug 2008 07:22:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/03/dont-trust-garbage-collectors/</guid>
       <description>I recently read This blog post and the author has a nice point about garbage collectors. When we program in languages with that feature we should not blindly trust the automatic memory management for everything. Most of the time it is ok, but sometimes you have to think about memory management in those languages too. In the blog post Tahseen Ur Rehman gives an example with a thread which was holding some references to the objects so they could not be deleted, so the users were getting OutOfMemoryErrors.</description>
     </item>
     
     <item>
       <title>A little benchmark with C&#43;&#43; and Java in the game.</title>
-      <link>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</link>
+      <link>https://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</link>
       <pubDate>Thu, 31 Jul 2008 20:59:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/31/a-little-benchmark-with-c-and-java-in-the-game./</guid>
       <description>Today i just wanted to make a benchmark and see which is faster java or C++. There are rumors over the internet that java is or will be faster than c++ some day. So today I decided to try compare the speed of those languages. We all know arrays and how bad they can be sometimes if you are not careful with them in C++, because
 * They don&#39;t know it&#39;s size You cannot extend it if you reach the limit</description>
     </item>
     
     <item>
       <title>Nvidia and KDE4.1 problem solved.</title>
-      <link>http://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./</link>
+      <link>https://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./</link>
       <pubDate>Thu, 31 Jul 2008 19:04:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/31/nvidia-and-kde4.1-problem-solved./</guid>
       <description>Today, while I was using the KDE 4.1 I noticed that is a bit slower than it was before with 3.5. So after a little searching(one query in gogle) on the net I found this page which just saved my day. I can now say that KDE is faster than ever it was. I can&amp;rsquo;t believe they managed to make the damn thing even faster :). Nice work guys, keep it up!</description>
     </item>
     
     <item>
       <title>Nice way to keep the lines indented in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</link>
       <pubDate>Fri, 25 Jul 2008 21:59:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/25/nice-way-to-keep-the-lines-indented-in-vim/</guid>
       <description>Here is one more vim tipp. I just put a new keybinding to my .vimrc file, thanks to \amethyst from #vim@freenode.net :). Here it is
 inoremap &amp;lt;expr&amp;gt; &amp;lt;CR&amp;gt; (col(&amp;quot;$&amp;quot;)==col(&amp;quot;.&amp;quot;) ? &amp;quot;\&amp;lt;ESC&amp;gt;=a{\&amp;lt;C-O&amp;gt;o&amp;quot; : &amp;quot;\&amp;lt;CR&amp;gt;&amp;quot;) This will indent the whole block before the line if you hit on the end of the code you are writing in insert mode. If you are not at the end of the line you will get the default behaviour of .</description>
     </item>
     
     <item>
       <title>Highlight for Qt classes in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
       <pubDate>Wed, 23 Jul 2008 19:04:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
       <description>Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my ~/.vim/syntax/cpp.vim. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&amp;rsquo;s web site ;).
 UPDATE: Today Vidas Katinas send me the modified version so i have updated the link.</description>
     </item>
     
     <item>
       <title>Making abbreviations persistent in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</link>
       <pubDate>Wed, 23 Jul 2008 10:47:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/23/making-abbreviations-persistent-in-vim/</guid>
       <description>If you are like me, most of the time you make more mistakes in vim, because your mind is little slower than you fingers. Enter abbreviations which is a really neat feature in vim :). You just have to type
 :iabbrev wrongstring wantedstring in command mode and the next time you type the word wrong vim will fix it. So where is the problem? The problem is that when you type that in command mode it is not persistent between sessions.</description>
     </item>
     
     <item>
       <title>Renaming a variable in gvim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</link>
       <pubDate>Mon, 21 Jul 2008 18:49:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/21/renaming-a-variable-in-gvim/</guid>
       <description>Some of you may be missing the nice IDE&amp;rsquo;s and their neat features when you are editing in gvim. I was myself a long time Eclipse user, but I found that it doesn&amp;rsquo;t make me more productive, but just eat the resources of my machine. I missed the renaming variable feature in gvim for some time now. Today this is over I was reading the manual of vim and found what I was looking for.</description>
     </item>
     
     <item>
       <title>6.00 in TU Sofia</title>
-      <link>http://nikolavp.github.io/blog/2008/07/19/6.00-in-tu-sofia/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/19/6.00-in-tu-sofia/</link>
       <pubDate>Sat, 19 Jul 2008 16:06:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/19/6.00-in-tu-sofia/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/19/6.00-in-tu-sofia/</guid>
       <description>I finally will manage to go to university because I&amp;rsquo;ve got 6 on one of the exams here in Bulgaria. Finally all of that math will be over for now :).</description>
     </item>
     

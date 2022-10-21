@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dynamic on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/dynamic/</link>
+    <link>https://nikolavp.github.io/categories/dynamic/</link>
     <description>Recent content in dynamic on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/dynamic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Aug 2012 15:18:05 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/dynamic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pattern matching or sort of in python</title>
-      <link>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
+      <link>https://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</link>
       <pubDate>Wed, 29 Aug 2012 15:18:05 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
+      <guid>https://nikolavp.github.io/blog/2012/08/29/pattern-matching-or-sort-of-in-python/</guid>
       <description>I must admit that pattern matching is not really new to me. The first time I looked at haskell I was impressed by the idea a lot. It wasn&amp;rsquo;t until late that I found about new languages on the JVM that support the same idiom.
 For this to work properly - the language should know how to &amp;ldquo;destruct&amp;rdquo; an already constructed element. A simple example in haskell is if you have a list of elements and you want to capture the first element in a variable and the remaining part of the list in another variable.</description>
     </item>
     
     <item>
       <title>Reloading jars at Runtime</title>
-      <link>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
+      <link>https://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</link>
       <pubDate>Fri, 14 Aug 2009 17:14:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/08/14/reloading-jars-at-runtime/</guid>
       <description>I haven&amp;rsquo;t blogged in a while but now i have some time :). This week I had to dynamically reload some jars from a directory and i searched the net about the problem. I will show the implementation that I finally came up with. The problem with the dynamically loading external jars is that they should not be in the CLASSPATH because the system classloader is making some optimizations(cache) of the currently loaded classes and doesn&amp;rsquo;t search again in the CLASSPATH if it has already instantiated the class.</description>
     </item>
     

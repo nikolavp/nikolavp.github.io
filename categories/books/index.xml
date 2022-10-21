@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>books on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/books/</link>
+    <link>https://nikolavp.github.io/categories/books/</link>
     <description>Recent content in books on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 30 Aug 2008 09:46:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Aug 2008 09:46:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Back from the vacation</title>
-      <link>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</link>
       <pubDate>Sat, 30 Aug 2008 09:46:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/30/back-from-the-vacation/</guid>
       <description>Hmm yesterday i finally came back from the vacation in the mountain. I prefer it instead of the sea, because the sea is too dirty in the last years. As you maybe know i live in Bulgaria and it is near the Black sea which is pretty much aweful. Most of the time i was fishing swimming in a nice Pool near Ribarica. I also almost read Code complete second edition which is pretty old book but is still adequate for most of the tips.</description>
     </item>
     

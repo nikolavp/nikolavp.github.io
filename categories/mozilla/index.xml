@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mozilla on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/mozilla/</link>
+    <link>https://nikolavp.github.io/categories/mozilla/</link>
     <description>Recent content in mozilla on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Aug 2008 16:13:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/mozilla/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Aug 2008 16:13:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/mozilla/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Aurora project.</title>
-      <link>http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</link>
+      <link>https://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</link>
       <pubDate>Sat, 09 Aug 2008 16:13:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/09/the-aurora-project./</guid>
       <description>Maybe you&amp;rsquo;ve heard about the Aurora project from mozilla labs, well I wasn&amp;rsquo;t and I was impressed from the videos over here. It seems that maybe the Web will outperform the Desktop some day. I hope that it doesn&amp;rsquo;t happen so soon, because I really like the Desktop more and most of the applications I use today are Desktop based(mostly Qt/KDE).</description>
     </item>
     

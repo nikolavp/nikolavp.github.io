@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>student on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/student/</link>
+    <link>https://nikolavp.github.io/categories/student/</link>
     <description>Recent content in student on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 04 May 2009 10:36:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/student/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 May 2009 10:36:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/student/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ScribeFire - my new blogger editor</title>
-      <link>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
+      <link>https://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</link>
       <pubDate>Mon, 04 May 2009 10:36:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
+      <guid>https://nikolavp.github.io/blog/2009/05/04/scribefire-my-new-blogger-editor/</guid>
       <description>This is the first time i write from ScribeFire - my new choice for blog editor. I tried almost every client out there for Linux(since i am using kubuntu) and they were all buggy for me. For example
 I didn&amp;rsquo;t manage to configure kblogger-kde4 - the damn thing couldn&amp;rsquo;t find my posts and entries
 Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;rsquo;t find and after I installed it I got a ValueError in a property named &amp;ldquo;name&amp;rdquo; and I was too tired to look at the code.</description>
@@ -23,10 +23,10 @@ Blogtk didn&amp;rsquo;t even start - it wanted gtkhtml2 which python couldn&amp;
     
     <item>
       <title>I am now a student :)</title>
-      <link>http://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</link>
+      <link>https://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</link>
       <pubDate>Fri, 10 Oct 2008 19:52:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/10/10/i-am-now-a-student/</guid>
       <description>Sorry that I haven&amp;rsquo;t been writing lately but I am now living in Student city and there a don&amp;rsquo;t have a computer with Internet connection. I will bring my laptop maybe this week so I will finally have one. The first week was not so bad - I had lectures on Algebra and Discrete mathematics. All in all I think that I will be &amp;ldquo;OK&amp;rdquo; with those, but we will see what the time will show.</description>
     </item>
     

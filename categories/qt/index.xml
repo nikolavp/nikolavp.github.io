@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Qt on Nikolavp&#39;s hacking</title>
-    <link>http://nikolavp.github.io/categories/qt/</link>
+    <link>https://nikolavp.github.io/categories/qt/</link>
     <description>Recent content in Qt on Nikolavp&#39;s hacking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nikolavp@gmail.com (Nikola Petrov)</managingEditor>
     <webMaster>nikolavp@gmail.com (Nikola Petrov)</webMaster>
     <copyright>Copyright (c) 2008 - 2016, Nikola Petrov; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 18 Aug 2008 12:34:00 +0000</lastBuildDate><atom:link href="http://nikolavp.github.io/categories/qt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Aug 2008 12:34:00 +0000</lastBuildDate><atom:link href="https://nikolavp.github.io/categories/qt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>More kbgoffice fun</title>
-      <link>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
+      <link>https://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</link>
       <pubDate>Mon, 18 Aug 2008 12:34:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/08/18/more-kbgoffice-fun/</guid>
       <description>Yesterday i finally managed to port kbgoffice completely to Qt4, so everyone with no qt3support can compile it. I am not happy with what i got however. The code is really bad and there are no testcases so i might write those for now. With no tests the development is really hard. I might use the test framework provided with Qt which really rocks. The program is also hard coded with a class named Properties which is really broken, because it seems that when they wrote the program there was no QSettings class which is times better :).</description>
     </item>
     
     <item>
       <title>Highlight for Qt classes in vim</title>
-      <link>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
+      <link>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</link>
       <pubDate>Wed, 23 Jul 2008 19:04:00 +0000</pubDate>
       <author>nikolavp@gmail.com (Nikola Petrov)</author>
-      <guid>http://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
+      <guid>https://nikolavp.github.io/blog/2008/07/23/highlight-for-qt-classes-in-vim/</guid>
       <description>Maybe some of you like me like to use a sophisticated library for C++ development. My choice is Qt. I really like to have highlighting for most of the classes so here is my ~/.vim/syntax/cpp.vim. This will highlight all of the Qt classes as built in structures of the language, which is really nice. I just copied all of the classes from the Qt&amp;rsquo;s web site ;).
 UPDATE: Today Vidas Katinas send me the modified version so i have updated the link.</description>
     </item>
